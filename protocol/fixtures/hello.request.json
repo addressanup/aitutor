@@ -1,0 +1,11 @@
+{
+  "jsonrpc": "2.0",
+  "id": "c-1",
+  "method": "session.hello",
+  "params": {
+    "protocolMin": "0.1.0",
+    "protocolMax": "0.1.0",
+    "coreVersion": "0.1.0",
+    "token": "fixture-token"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "jsonrpc": "2.0",
+  "id": "c-2",
+  "method": "overlay.draw",
+  "params": {
+    "items": [
+      {
+        "kind": "spotlight",
+        "rect": { "x": 120, "y": 120, "width": 400, "height": 240 },
+        "caption": "Hello from agent-core"
+      }
+    ],
+    "ttlMs": 2000
+  }
+}

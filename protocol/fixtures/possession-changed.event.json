@@ -1,0 +1,9 @@
+{
+  "jsonrpc": "2.0",
+  "method": "possession.changed",
+  "params": {
+    "holder": "learner",
+    "cause": "hardware_interrupt",
+    "atMs": 1780400000000
+  }
+}

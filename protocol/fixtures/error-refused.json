@@ -1,0 +1,12 @@
+{
+  "jsonrpc": "2.0",
+  "id": "c-3",
+  "error": {
+    "code": -32000,
+    "message": "refused: possession_not_held",
+    "data": {
+      "reason": "possession_not_held",
+      "retryable": false
+    }
+  }
+}

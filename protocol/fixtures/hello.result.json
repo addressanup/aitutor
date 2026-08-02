@@ -1,0 +1,10 @@
+{
+  "jsonrpc": "2.0",
+  "id": "c-1",
+  "result": {
+    "protocolVersion": "0.1.0",
+    "shellVersion": "0.1.0",
+    "sessionId": "sess-fixture",
+    "capabilities": ["permissions", "overlay"]
+  }
+}

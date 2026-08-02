@@ -1,0 +1,47 @@
+# App-neutral sample lesson — targets TextEdit to prove the format is domain-open.
+# Any app is expressible; the engine never special-cases one.
+lesson: textedit.u1.l1
+version: 0.1.0
+app:
+  bundleId: com.apple.TextEdit
+  name: TextEdit
+skills:
+  teaches: [text.bold, text.save]
+  requires: [text.type]
+explain:
+  - id: why-formatting
+    say:
+      core: "Formatting is meaning made visible. Bold marks what matters."
+      deep: "Rich text stores styling runs alongside characters; plain text discards them."
+    board:
+      - { op: frame, title: "Two kinds of text" }
+      - { op: label, text: "plain vs rich" }
+    check:
+      - { op: sort_labels, prompt: "which format keeps bold?", pass: all_correct }
+demo:
+  - id: d1
+    intent: text.select_all
+    channels: [keys]
+    pre: { pane_focus: document }
+    narrate: "Select everything with Command-A."
+    verify: { ax: "document.selection == all", timeout_s: 3 }
+  - id: d2
+    intent: text.toggle_bold
+    channels: [keys, ax]
+    narrate: "Command-B makes it bold."
+    verify: { ax: "document.style.bold == true" }
+practice:
+  starter_assets: { bundle: "textedit://starters/paragraph.rtf", opens_to: "Draft" }
+  task: "Bold the first sentence, then save the file."
+  time_box_min: 4
+rubric:
+  - { crit: first_sentence_bold, detect: "ax.style(range=0..sentence_end).bold == true", weight: 0.6 }
+  - { crit: saved, detect: "file.exists && file.dirty == false", weight: 0.4, when: boundary_snapshot }
+hints:
+  - { level: L3, do: partial_demo, step: d2 }
+  - { level: L2, do: overlay, target: "bold button", say: "this one" }
+  - { level: L1, say: "Which shortcut makes text bold?" }
+remediate:
+  - { on: pattern.saved_as_plain_text, goto: explain.why-formatting, then: retry }
+review:
+  - { due_days: [2, 7], task: "bold a heading in a fresh document", pass: "ax.style.bold == true && assist == 0" }

@@ -1,0 +1,28 @@
+# Dormant until this repo has a remote — kept in-tree so reproducibility discipline
+# exists from commit one. Two jobs: TypeScript quality gates + Swift build/test.
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  core:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 26
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: make lint typecheck test
+      - run: make demo
+
+  shell:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift build --package-path shell
+      - run: swift test --package-path shell

@@ -1,0 +1,25 @@
+# Node
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+
+# env & local data
+.env
+.env.*
+!.env.example
+.data/
+*.db
+*.db-wal
+*.db-shm
+
+# Swift / Xcode
+.build/
+.swiftpm/
+DerivedData/
+xcuserdata/
+*.xcodeproj
+shell/build/
+
+# macOS
+.DS_Store

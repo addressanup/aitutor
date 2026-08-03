@@ -20,9 +20,10 @@ let package = Package(
         .target(name: "ShellProtocol"),
         .target(name: "AXBridge"),
         .target(name: "EventTapGuard"),
-        .target(name: "Permissions"),
+        .target(name: "Permissions", dependencies: ["ShellProtocol"]),
         .target(
             name: "Overlay",
+            dependencies: ["ShellProtocol"],
             swiftSettings: [.defaultIsolation(MainActor.self)]
         ),
         .target(name: "CapturePipeline"),

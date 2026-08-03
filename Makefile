@@ -9,7 +9,7 @@ RUNS ?= 50
 
 .PHONY: bootstrap check lint typecheck test shell-build shell-test shell-app shell-run \
         shell-smoke fakeshell core-dev demo spike-ax spike-ax-run spike-snapshot spike-snapshot-run \
-        journal-dump cert reset-tcc clean
+        spike-verdict-test journal-dump cert reset-tcc clean
 
 bootstrap: ## one-time setup: pnpm install + env file
 	corepack enable
@@ -17,7 +17,7 @@ bootstrap: ## one-time setup: pnpm install + env file
 	@test -f core/.env || cp core/.env.example core/.env
 	@echo "bootstrap done — see 'make cert' before first 'make shell-run'"
 
-check: lint typecheck test shell-build shell-test ## every quality gate
+check: lint typecheck test spike-verdict-test shell-build shell-test ## every quality gate
 
 lint:
 	pnpm exec biome check .
@@ -54,6 +54,9 @@ demo: ## one-shot in-process fake-shell round-trip (CI smoke)
 
 spike-ax: ## AXObserver density probe: make spike-ax TARGET=com.apple.TextEdit SECONDS=60
 	swift run --package-path shell axprobe --bundle-id $(TARGET) --seconds $(SECONDS)
+
+spike-verdict-test: ## density-verdict classifier tests (no TCC, no target app — CI-safe)
+	node --test 'shell/Scripts/*.test.mjs'
 
 spike-ax-run: ## per-action density: TARGET=<bundle-id> + ACTIONS=<file> (interactive) or DRIVERS=<dir> (headless)
 	shell/Scripts/ax-density-run.sh --bundle-id $(TARGET) $(if $(DRIVERS),--drivers $(DRIVERS),--actions $(ACTIONS)) --seconds $(ACTION_SECONDS)

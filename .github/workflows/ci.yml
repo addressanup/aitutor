@@ -18,6 +18,10 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: make lint typecheck test
+      # The density-verdict classifier decides the >=17/20 spike bar. It runs here
+      # because it needs neither an Accessibility grant nor a target app — only
+      # synthetic logs — so the bar stays regression-guarded on every commit.
+      - run: make spike-verdict-test
       - run: make demo
 
   shell:

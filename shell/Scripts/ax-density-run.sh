@@ -132,25 +132,25 @@ SUMMARY="$OUT_DIR/summary.md"
   sed -n '/— notification counts —/,$p' "$OUT_DIR/00-baseline.log"
   echo '```'
   echo ""
-  echo "## Per-action draft table"
+  echo "## Per-action table"
   echo ""
-  echo "Verdict scale: **Usable** (fires every rep, attributable, semantically distinct) / **Partial** (unreliable or ambiguous) / **Silent**."
+  echo "Verdict scale: **Usable** (fires every rep, attributable above ambient, semantically distinct) / **Partial** (unreliable or ambiguous) / **Silent**."
+  echo "Verdicts are computed by \`shell/Scripts/ax-density-verdict.mjs\` from these logs — rerun it on this directory to reproduce them."
   echo ""
-  echo "| # | Action | Events | Rate (ev/s) | Top notifications | Verdict |"
-  echo "|---|--------|--------|-------------|-------------------|---------|"
-  i=0
-  for action in "${ACTIONS[@]}"; do
-    i=$((i + 1))
-    slug=$(echo "$action" | tr '[:upper:]' '[:lower:]' | sed 's/[^a-z0-9]\{1,\}/-/g;s/^-//;s/-$//' | cut -c1-40)
-    log=$(printf '%s/%02d-%s.log' "$OUT_DIR" "$i" "$slug")
-    total=$(awk '/total:/ {print $2}' "$log" | tail -1)
-    rate=$(awk '/rate:/ {print $4}' "$log" | tail -1)
-    top=$(sed -n '/— notification counts —/,$p' "$log" | awk 'NR>1 && NF==2 {printf "%s×%s; ", $1, $2}' | head -c 160)
-    err=$(grep -q "DRIVER-ERROR" "$log" && echo " ⚠driver-error" || true)
-    echo "| $i | $action$err | ${total:-0} | ${rate:-0} | ${top:-—} | |"
-  done
+  node "$REPO_ROOT/shell/Scripts/ax-density-verdict.mjs" "$OUT_DIR" \
+    ${DRIVERS_DIR:+--drivers "$DRIVERS_DIR"} 2>/dev/null \
+    || echo "_(verdict tool failed — inspect the raw logs)_"
+  echo ""
+  echo "## Driver errors"
+  echo ""
+  if grep -lq "DRIVER-ERROR" "$OUT_DIR"/*.log 2>/dev/null; then
+    grep -h "DRIVER-ERROR" "$OUT_DIR"/*.log | sed 's/^/- /'
+  else
+    echo "None."
+  fi
 } > "$SUMMARY"
 
 echo ""
-echo "== done — draft table: $SUMMARY =="
-echo "Fill the Verdict column (Usable/Partial/Silent), then distill into docs/notes/spike-ax-<app>-results.md."
+echo "== done — scored table: $SUMMARY =="
+node "$REPO_ROOT/shell/Scripts/ax-density-verdict.mjs" "$OUT_DIR" ${DRIVERS_DIR:+--drivers "$DRIVERS_DIR"} 2>/dev/null | tail -3
+echo "Distill into docs/notes/spike-ax-<app>-results.md."

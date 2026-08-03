@@ -12,6 +12,7 @@ let package = Package(
         .executable(name: "Tutor", targets: ["TutorShellApp"]),
         .executable(name: "axprobe", targets: ["AXProbe"]),
         .executable(name: "snapshot-spike", targets: ["SnapshotSpike"]),
+        .executable(name: "axdrive", targets: ["AXDrive"]),
     ],
     dependencies: [
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.4.0"),
@@ -41,6 +42,10 @@ let package = Package(
         .executableTarget(
             name: "SnapshotSpike",
             dependencies: ["AXBridge", "EventTapGuard", .product(name: "ArgumentParser", package: "swift-argument-parser")]
+        ),
+        .executableTarget(
+            name: "AXDrive",
+            dependencies: ["AXBridge", .product(name: "ArgumentParser", package: "swift-argument-parser")]
         ),
         .testTarget(name: "ShellProtocolTests", dependencies: ["ShellProtocol"]),
     ]

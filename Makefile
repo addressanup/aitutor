@@ -5,9 +5,11 @@ SECONDS ?= 60
 MENU ?= File>Export as PDF…
 SAVE ?= /tmp/aitutor-spike-out
 ACTION_SECONDS ?= 20
+RUNS ?= 50
 
 .PHONY: bootstrap check lint typecheck test shell-build shell-test shell-app shell-run \
-        shell-smoke fakeshell core-dev demo spike-ax spike-ax-run spike-snapshot journal-dump cert reset-tcc clean
+        shell-smoke fakeshell core-dev demo spike-ax spike-ax-run spike-snapshot spike-snapshot-run \
+        journal-dump cert reset-tcc clean
 
 bootstrap: ## one-time setup: pnpm install + env file
 	corepack enable
@@ -53,8 +55,11 @@ demo: ## one-shot in-process fake-shell round-trip (CI smoke)
 spike-ax: ## AXObserver density probe: make spike-ax TARGET=com.apple.TextEdit SECONDS=60
 	swift run --package-path shell axprobe --bundle-id $(TARGET) --seconds $(SECONDS)
 
-spike-ax-run: ## per-action density protocol: make spike-ax-run TARGET=<bundle-id> ACTIONS=<file> [ACTION_SECONDS=20]
-	shell/Scripts/ax-density-run.sh --bundle-id $(TARGET) --actions $(ACTIONS) --seconds $(ACTION_SECONDS)
+spike-ax-run: ## per-action density: TARGET=<bundle-id> + ACTIONS=<file> (interactive) or DRIVERS=<dir> (headless)
+	shell/Scripts/ax-density-run.sh --bundle-id $(TARGET) $(if $(DRIVERS),--drivers $(DRIVERS),--actions $(ACTIONS)) --seconds $(ACTION_SECONDS)
+
+spike-snapshot-run: ## ritual reliability loop: make spike-snapshot-run TARGET=<bundle-id> MENU="File>…" [RUNS=50]
+	shell/Scripts/snapshot-ritual-run.sh --bundle-id $(TARGET) --menu "$(MENU)" --runs $(RUNS)
 
 spike-snapshot: ## menu-drive export rehearsal: make spike-snapshot TARGET=... MENU="File>Export as PDF…"
 	swift run --package-path shell snapshot-spike --bundle-id $(TARGET) --menu-path "$(MENU)" --save-to $(SAVE)

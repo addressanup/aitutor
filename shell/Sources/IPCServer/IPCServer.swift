@@ -110,9 +110,9 @@ public final class IPCServer: @unchecked Sendable {
             conn.cancel()
             return
         }
-        let min = params["protocolMin"]?.stringValue ?? ProtocolInfo.version
+        let min = params["protocolMin"]?.stringValue ?? ProtocolInfo.minSupported
         let max = params["protocolMax"]?.stringValue ?? ProtocolInfo.version
-        guard let agreed = Semver.negotiate(min: min, max: max, supported: [ProtocolInfo.version]) else {
+        guard let agreed = Semver.negotiate(min: min, max: max, supported: ProtocolInfo.supported) else {
             send(JSONRPC.encodeError(id: id, error: RPCError(code: .incompatibleProtocol, message: "no common protocol version")), conn: conn)
             conn.cancel()
             return
@@ -120,7 +120,7 @@ public final class IPCServer: @unchecked Sendable {
         authed = true
         let result = HelloResult(
             protocolVersion: agreed,
-            shellVersion: "0.1.0",
+            shellVersion: ProtocolInfo.shellVersion,
             sessionId: "sess-\(UUID().uuidString.prefix(8))",
             capabilities: ["permissions", "overlay"]
         )

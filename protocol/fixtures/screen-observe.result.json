@@ -1,0 +1,9 @@
+{
+  "jsonrpc": "2.0",
+  "id": "c-7",
+  "result": {
+    "atMs": 1780400000000,
+    "frame": { "x": 0, "y": 0, "width": 1440, "height": 900 },
+    "imageAvailable": false
+  }
+}

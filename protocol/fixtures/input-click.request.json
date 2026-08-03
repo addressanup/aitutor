@@ -1,0 +1,12 @@
+{
+  "jsonrpc": "2.0",
+  "id": "c-6",
+  "method": "input.click",
+  "params": {
+    "pid": 4242,
+    "point": { "x": 512, "y": 384 },
+    "button": "left",
+    "clickCount": 2,
+    "modifiers": ["shift"]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "jsonrpc": "2.0",
+  "id": "c-4",
+  "method": "ax.query",
+  "params": {
+    "bundleId": "com.example.FixtureApp",
+    "scope": "focused_window",
+    "maxDepth": 4,
+    "maxNodes": 200
+  }
+}

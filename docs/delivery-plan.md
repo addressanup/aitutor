@@ -6,6 +6,13 @@
 
 **Reality anchor:** Today is 2026-08-03. The repo already contains working skeletons — IPC protocol v0.1.0 with cross-language golden-fixture tests, the session state machine + hash-chained journal, IPC client/server with token auth and semver negotiation, Lesson Spec v0 parser, overlay spotlight, AX bridge (spike-only), a possession gate that is real but unwired, and the two week-1 spike binaries (`AXProbe`, `SnapshotSpike`). Formal build start is ~1 Sep 2026 with 2.5–3 engineers + the founder (FCP domain expert) + a learning engineer to hire. **August is found time and is founder-executable.** The plan starts from this code, not from zero.
 
+> **Revision (2026-08-03).** Both Phase 0 spikes have now been run headlessly against
+> TextEdit — **instrument validation, not the wedge-app verdict, which remains open.**
+> The snapshot bar is **not met**; per Phase 0's own instruction a miss produces a written
+> gap analysis, and it is `docs/notes/spike-snapshot-textedit-results.md`. Density verdicts
+> are now computed mechanically from each run's own logs: a repeat run scored **17/20**
+> where the single eyeballed run it supersedes scored 20/20 (`docs/notes/spike-ax-textedit-results.md`).
+
 ---
 
 ## 1. Executive planning summary
@@ -414,8 +421,8 @@ Engineering-grade items one level beneath the strategic plan's §8 register (not
 
 | ID | Item | Why it blocks | Resolves |
 |---|---|---|---|
-| MR-1 | AXObserver density on FCP (~20 canonical actions; ≥17/20 threshold) | Determines observation architecture; sparse coverage makes hit-testing primary and reprices the look budget before M1 | Phase 0 spike (binary exists) |
-| MR-2 | Snapshot ritual inside the 2–4 s budget with focus restore (50/0 on ≥2 Macs) | Assessment ground truth and the ≥99% gate; shapes executor design | Phase 0 spike (binary exists) |
+| MR-1 | AXObserver density on FCP (~20 canonical actions; ≥17/20 threshold) | Determines observation architecture; sparse coverage makes hit-testing primary and reprices the look budget before M1 | Phase 0 spike — instrument validated headlessly, results in `docs/notes/spike-ax-textedit-results.md`; the wedge-app run is what decides this |
+| MR-2 | Snapshot ritual inside the 2–4 s budget with focus restore (50/0 on ≥2 Macs) | Assessment ground truth and the ≥99% gate; shapes executor design | Phase 0 spike — bar not met; gap analysis in `docs/notes/spike-snapshot-textedit-results.md` |
 | MR-3 | API-key custody on learner machines | Shapes ModelPort transport, metering, revocation, trust story; retrofit is expensive | Decision E-1, by Sep 15 — resolved posture in §12 Secrets |
 | MR-4 | Learning-engineer hire | Content (350–550 h) is the M1 critical path; every unhired week slips Units 1–3 | Offer out by Aug 31; start ≤Oct 1; September is founder-solo content by plan |
 | MR-5 | Repo has no git remote; CI has never run | Everything downstream assumes CI is a guard | Task 1, this week |
@@ -598,16 +605,17 @@ Statuses: **M0** (in the ~37 EW slice) · **M1** (design-partner launch) · **OP
 
 ## 12. Infrastructure and operational work
 
-**CI matrix** (extend `.github/workflows/ci.yml`; activation is Task 1):
+**CI matrix** (`.github/workflows/ci.yml` — Task 1 is done: the remote exists and both jobs are green). Two jobs run today, `core` and `shell`. The cross-language golden-fixture decode already runs inside them, but the guard that *fails when a method or event lacks a fixture* is still specced, as are `cache-discipline`, `overlay-exclusion`, and `latency / replay / seeded-error` — each lands with the work it guards:
 
 | Job | Runner | Content |
 |---|---|---|
-| ts | macos-15 | biome (fix the schema-version infos), `pnpm -r typecheck`, `pnpm -r test`, `make demo` |
-| swift | macos-15 | `swift build` / `swift test` + SwiftPM cache |
-| fixtures | macos-15 | Cross-language golden-fixture decode; fails if a method/event lacks a fixture |
+| core | macos-15 | biome (fix the schema-version infos), `pnpm -r typecheck`, `pnpm -r test` (includes the cross-language golden-fixture decode), `make spike-verdict-test`, `make demo` |
+| shell | macos-15 | Newest-stable Xcode selection (the runner default ships Swift 6.1; `Package.swift` needs 6.2) + SwiftPM cache, then `swift build` / `swift test` |
 | cache-discipline | macos-15 | Snapshot tests on per-model builders: prefix bytes identical across N turns; no mid-conversation `role:system` on Sonnet/Haiku |
 | overlay-exclusion | lab Mac | Draw sentinel spotlight → `captureOnce` through SCContentFilter → assert zero sentinel pixels |
 | latency / replay / seeded-error | lab Mac | §11 harnesses, nightly + on-touch |
+
+`make spike-verdict-test` runs the density-verdict classifier's own tests — the classifier that decides the ≥17/20 bar from a run's logs. It belongs in CI because it needs neither an Accessibility grant nor the target app, only synthetic logs, so the bar's arithmetic stays regression-guarded on every commit even though the spikes themselves cannot run on a hosted runner.
 
 **Lab hardware:** **two Mac minis** (Sep): one pinned to the pilot-fleet FCP/macOS version for replay/latency/seeded-error runs; one canary that takes FCP and macOS updates first. They are the only place capture, FCP, and latency tests can truthfully run.
 
@@ -666,8 +674,8 @@ Scope: Tasks 4–8 below + latency harness v0 + the AnthropicPort cache probe (T
 Owners: **F** = founder, **SE** = shell/Swift engineer (Eng A), **CE** = core/TS engineer (Eng B), **MC** = model/cost engineer (Eng C), **LE** = learning engineer.
 
 1. **Activate CI (executable today).** *Owner:* F. *Inputs:* `.github/workflows/ci.yml` (dormant — no remote), a GitHub org/private repo. *Outputs:* remote added, `main` pushed, both macos-15 jobs running. *Acceptance:* both jobs green on GitHub Actions for `770b48a`+ (local `make check` already passes; failures indicate CI-env drift — fix until green).
-2. **AXObserver density spike vs real FCP.** *Owner:* F. *Inputs:* `make spike-ax TARGET=com.apple.FinalCut SECONDS=300`; F's list of ~20 canonical editing actions. *Outputs:* per-action coverage table in `docs/notes/spike-ax-fcp-results.md`; go/no-go on the hit-testing fallback. *Acceptance:* all 20 actions have a recorded verdict; **≥17/20 usable ⇒ observer-primary; below ⇒ the fallback is scheduled into Sprints 1–2 as the primary channel and the look-budget re-derivation ticket opens with an M1 deadline.**
-3. **Snapshot-ritual spike vs FCP Export XML.** *Owner:* F. *Inputs:* `make spike-snapshot TARGET=com.apple.FinalCut MENU="File>Export XML…"`; a scratch FCP library. *Outputs:* timing distribution (menu drive + save sheet + focus restore) vs the 2–4 s budget, same results doc. *Acceptance:* **the Phase 0 bar verbatim — 50 consecutive scripted invocations, 0 failures, p95 within the window, replicated on a second Mac before the Phase 0 review**; any miss produces a written gap analysis feeding the ≥99% M0 gate plan.
+2. **AXObserver density spike vs real FCP.** *Owner:* F. *Inputs:* `make spike-ax TARGET=com.apple.FinalCut SECONDS=300`; F's list of ~20 canonical editing actions. *Outputs:* per-action coverage table in `docs/notes/spike-ax-<app>-results.md` — the harness takes the target as a bundle id, so each app gets its own results doc; `docs/notes/spike-ax-textedit-results.md` is the committed instrument-validation instance; go/no-go on the hit-testing fallback. *Acceptance:* all 20 actions have a recorded verdict; **≥17/20 usable ⇒ observer-primary; below ⇒ the fallback is scheduled into Sprints 1–2 as the primary channel and the look-budget re-derivation ticket opens with an M1 deadline.**
+3. **Snapshot-ritual spike vs FCP Export XML.** *Owner:* F. *Inputs:* `make spike-snapshot TARGET=com.apple.FinalCut MENU="File>Export XML…"`; a scratch FCP library. *Outputs:* per-phase timing distribution (menu resolve + press + save panel + fill + confirm + artifact on disk + focus restore) vs the 2–4 s budget, in `docs/notes/spike-snapshot-<app>-results.md` — again one doc per target bundle id; `docs/notes/spike-snapshot-textedit-results.md` is the committed instance. *Acceptance:* **the Phase 0 bar verbatim — 50 consecutive scripted invocations, 0 failures, p95 within the window, replicated on a second Mac before the Phase 0 review**; any miss produces a written gap analysis feeding the ≥99% M0 gate plan.
 4. **Burn down protocol/shell drift #1–#5.** *Owner:* CE (+SE for Swift). *Inputs:* code-audit §6; `IPCServer.swift`, `fake-shell.ts`, `client.ts`, `version.ts`. *Outputs:* Swift server sends close 4401 on hello-timeout/bad-token; both shells enforce first-frame-must-be-hello identically; fake shell actually pushes `possession.changed` + `hardware.interrupt` and the client's handling is tested; client imports `OVERLAY_TIMEOUT_MS`; `overlay.draw` default-TTL semantics defined in the protocol table and implemented identically. *Acceptance:* `make check` green with new regression tests covering both safety-critical events end-to-end; fake-shell/Swift equivalence verified via `make shell-smoke`.
 5. **Implement the real event tap.** *Owner:* SE. *Inputs:* empty `EventTapGuard.start()`, `kTutorSyntheticTag`. *Outputs:* listen-only tap created; genuine hardware input flips `PossessionGate` in-process before the callback returns; shell emits `hardware.interrupt` + `possession.changed` over IPC (first real emission of either). *Acceptance:* harness (Task 7) measures tap→gate-abort <10 ms and input→core-notified ≤100 ms end-to-end; numbers committed.
 6. **Wire the posting path.** *Owner:* SE. *Inputs:* `SyntheticKeyPoster.swift` (commented-out sketch), `PossessionGate` (real but unreached), `RPCHandlers.swift` (hard-coded REFUSED). *Outputs:* `input.key` consults the gate and a session whitelist (bundle-ID list from `session.hello`), posts via `CGEventPostToPid` with the synthetic tag, refuses with typed `possession_not_held` / `app_not_whitelisted` (both currently defined-but-never-produced); frontmost check before every post. *Acceptance:* scripted run — refused without lease; posts ⌘B into whitelisted TextEdit with lease; hardware input mid-sequence aborts the queue and subsequent posts refuse until re-grant; journal records all of it.

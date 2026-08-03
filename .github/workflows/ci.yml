@@ -1,5 +1,4 @@
-# Dormant until this repo has a remote — kept in-tree so reproducibility discipline
-# exists from commit one. Two jobs: TypeScript quality gates + Swift build/test.
+# Reproducibility discipline from commit one. Two jobs: TypeScript quality gates + Swift build/test.
 name: ci
 on:
   push:

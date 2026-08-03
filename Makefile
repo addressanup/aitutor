@@ -9,7 +9,7 @@ RUNS ?= 50
 
 .PHONY: bootstrap check lint typecheck test shell-build shell-test shell-app shell-run \
         shell-smoke fakeshell core-dev demo spike-ax spike-ax-run spike-snapshot spike-snapshot-run \
-        spike-verdict-test journal-dump cert reset-tcc clean
+        spike-verdict-test spike-doctor journal-dump cert reset-tcc clean
 
 bootstrap: ## one-time setup: pnpm install + env file
 	corepack enable
@@ -51,6 +51,9 @@ core-dev: ## terminal 2: agent-core connects, handshakes, draws, gets REFUSED
 
 demo: ## one-shot in-process fake-shell round-trip (CI smoke)
 	pnpm --filter @aitutor/core demo
+
+spike-doctor: ## preflight a machine for the spike protocols: make spike-doctor TARGET=<bundle-id>
+	shell/Scripts/spike-doctor.sh --bundle-id $(TARGET)
 
 spike-ax: ## AXObserver density probe: make spike-ax TARGET=com.apple.TextEdit SECONDS=60
 	swift run --package-path shell axprobe --bundle-id $(TARGET) --seconds $(SECONDS)

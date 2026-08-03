@@ -1,0 +1,16 @@
+{
+  "jsonrpc": "2.0",
+  "id": "c-5",
+  "result": {
+    "performed": true,
+    "matched": {
+      "depth": 1,
+      "role": "AXButton",
+      "subrole": "AXFixtureSubrole",
+      "title": "Fixture Button",
+      "identifier": "fixture-primary-button",
+      "actions": ["AXPress"],
+      "frame": { "x": 140, "y": 520, "width": 120, "height": 32 }
+    }
+  }
+}

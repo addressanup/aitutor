@@ -1,0 +1,34 @@
+{
+  "jsonrpc": "2.0",
+  "id": "c-4",
+  "result": {
+    "pid": 4242,
+    "truncated": false,
+    "nodes": [
+      {
+        "depth": 0,
+        "role": "AXWindow",
+        "title": "Fixture Window",
+        "actions": ["AXRaise"],
+        "frame": { "x": 100, "y": 80, "width": 900, "height": 600 }
+      },
+      {
+        "depth": 1,
+        "role": "AXButton",
+        "subrole": "AXFixtureSubrole",
+        "title": "Fixture Button",
+        "identifier": "fixture-primary-button",
+        "actions": ["AXPress"],
+        "frame": { "x": 140, "y": 520, "width": 120, "height": 32 }
+      },
+      {
+        "depth": 1,
+        "role": "AXTextArea",
+        "identifier": "fixture-text-area",
+        "value": "fixture body text",
+        "actions": [],
+        "frame": { "x": 120, "y": 140, "width": 860, "height": 360 }
+      }
+    ]
+  }
+}

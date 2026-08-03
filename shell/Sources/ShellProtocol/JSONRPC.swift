@@ -5,8 +5,16 @@ import Foundation
 // ../../../protocol/fixtures decode against these types in ShellProtocolTests.
 
 public enum ProtocolInfo {
-    public static let version = "0.1.0"
+    public static let version = "0.2.0"
     public static let minSupported = "0.1.0"
+    /// Every version this side may agree on, oldest first — the `supported` argument to
+    /// Semver.negotiate. v0.2 is purely additive, so a core pinned to 0.1.0 still
+    /// handshakes; announcing only `version` would have locked N−1 cores out.
+    /// Mirror of SUPPORTED_VERSIONS in protocol/src/version.ts.
+    public static let supported = ["0.1.0", "0.2.0"]
+    /// Build version of the shell app itself — deliberately separate from the protocol
+    /// version, which happens to match today and will not forever.
+    public static let shellVersion = "0.2.0"
     public static let defaultPort: UInt16 = 47100
     public static let path = "/ipc"
     public static let helloTimeoutMs = 3000

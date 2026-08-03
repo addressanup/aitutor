@@ -1,0 +1,13 @@
+{
+  "jsonrpc": "2.0",
+  "id": "c-5",
+  "method": "ax.act",
+  "params": {
+    "bundleId": "com.example.FixtureApp",
+    "verb": "press",
+    "target": {
+      "identifier": "fixture-primary-button",
+      "role": "AXButton"
+    }
+  }
+}

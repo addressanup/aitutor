@@ -15,6 +15,26 @@ it before the harness. Findings go to `docs/notes/`, never here.
 if its events cluster into at least that many bursts, so a driver that repeats an
 action four times must say so or it will be scored against three.
 
+## Driver sets
+
+Four targets, chosen so the density answer is not one app's answer. Each `setup.sh`
+is run once, by hand, before the harness; all four refuse to run against real work.
+
+| Bundle id | Toolkit | Setup requirement |
+|---|---|---|
+| `com.apple.TextEdit` | AppKit text | none — seeds and opens its own RTF scratch file |
+| `com.figma.Desktop` | canvas, cloud | sign in, then open a **throwaway** design file and leave it frontmost |
+| `md.obsidian` | Electron / Chromium | seeds a throwaway vault at `/tmp/aitutor-spike-vault`; open that vault (once) and a note in it |
+| `com.apple.iWork.Keynote` | AppKit canvas | creates + saves `/tmp/aitutor-spike-keynote.key` via AppleScript — needs an Automation grant |
+
+`md.obsidian` is the architecturally load-bearing one: it decides whether a
+browser-backed app exposes AX a tutor can observe at all. Chromium builds its
+accessibility tree lazily, so its `setup.sh` sets `AXManualAccessibility` on the
+running process (`axprobe --enable-ax`) before the run — without it the probe
+reports near-silence and every action scores a false Silent. Relaunching Obsidian
+drops the flag; re-run `setup.sh`. `com.apple.iWork.Keynote` is the native-canvas
+control for it: same 20-action shape, same mouse verbs, AppKit instead of a web view.
+
 ## DSL
 
 | Command | Meaning |

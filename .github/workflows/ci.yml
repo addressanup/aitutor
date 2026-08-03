@@ -24,5 +24,16 @@ jobs:
     runs-on: macos-15
     steps:
       - uses: actions/checkout@v4
+      # Package.swift needs tools 6.2+; the runner's default Xcode ships 6.1.
+      - name: Select newest stable Xcode
+        run: |
+          ls -d /Applications/Xcode*.app
+          sudo xcode-select -s "$(ls -d /Applications/Xcode_*.app | grep -vi beta | sort -V | tail -1)"
+          swift --version
+      - uses: actions/cache@v4
+        with:
+          path: shell/.build
+          key: swiftpm-${{ runner.os }}-${{ hashFiles('shell/Package.resolved') }}
+          restore-keys: swiftpm-${{ runner.os }}-
       - run: swift build --package-path shell
       - run: swift test --package-path shell

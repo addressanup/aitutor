@@ -1,0 +1,43 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.483] AXMenuItemSelected  role=AXMenuItem title=Undo
+  [   0.486] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   0.492] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.492] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.492] AXValueChanged  role=AXTextArea title=
+  [   0.492] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.492] AXTitleChanged  role=AXStaticText title=
+  [   0.584] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   0.646] AXValueChanged  role=AXTextArea title=
+  [   0.646] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.647] AXTitleChanged  role=AXStaticText title=
+  [   1.331] AXMenuItemSelected  role=AXMenuItem title=Undo
+  [   1.338] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   1.343] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.344] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.344] AXValueChanged  role=AXTextArea title=
+  [   1.344] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.344] AXTitleChanged  role=AXStaticText title=
+  [   1.433] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   1.498] AXValueChanged  role=AXTextArea title=
+  [   1.499] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.500] AXTitleChanged  role=AXStaticText title=
+  [   2.191] AXMenuItemSelected  role=AXMenuItem title=Undo
+  [   2.194] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   2.201] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.202] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.202] AXValueChanged  role=AXTextArea title=
+  [   2.202] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.294] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   2.355] AXValueChanged  role=AXTextArea title=
+  [   2.356] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+
+— notification counts —
+  AXValueChanged                           12
+  AXFocusedUIElementChanged                6
+  AXSelectedTextChanged                    6
+  AXTitleChanged                           4
+  AXMenuItemSelected                       3
+
+  total: 31   rate: 1.55 events/sec

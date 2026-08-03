@@ -1,0 +1,35 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.545] AXSelectedTextChanged  role=AXGroup title=
+  [   0.546] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.546] AXFocusedUIElementChanged  role=AXGroup title=
+  [   0.546] AXTitleChanged  role=AXButton title=
+  [   0.700] AXTitleChanged  role=AXGroup title=
+  [   1.491] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.492] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.493] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   1.493] AXValueChanged  role=AXTextArea title=
+  [   1.493] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.493] AXTitleChanged  role=AXButton title=
+  [   1.645] AXTitleChanged  role=AXGroup title=
+  [   2.451] AXSelectedTextChanged  role=AXGroup title=
+  [   2.451] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.451] AXFocusedUIElementChanged  role=AXGroup title=
+  [   2.451] AXTitleChanged  role=AXButton title=
+  [   2.605] AXTitleChanged  role=AXGroup title=
+  [   2.647] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.648] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.648] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   2.648] AXValueChanged  role=AXTextArea title=
+  [   2.648] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.648] AXTitleChanged  role=AXButton title=
+  [   2.803] AXTitleChanged  role=AXGroup title=
+
+— notification counts —
+  AXTitleChanged                           8
+  AXSelectedTextChanged                    8
+  AXValueChanged                           4
+  AXFocusedUIElementChanged                4
+
+  total: 24   rate: 1.20 events/sec

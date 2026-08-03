@@ -1,0 +1,29 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.029] AXApplicationActivated  role=AXApplication title=Obsidian
+  [   0.048] AXUIElementDestroyed  role=- title=-
+  [   0.296] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.297] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.297] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   0.298] AXTitleChanged  role=AXGroup title=
+  [   0.298] AXValueChanged  role=AXTextArea title=
+  [   0.298] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.298] AXValueChanged  role=AXTextArea title=
+  [   0.298] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.299] AXTitleChanged  role=AXButton title=
+  [   2.991] AXValueChanged  role=AXTextArea title=
+  [   2.991] AXValueChanged  role=AXTextArea title=
+  [   3.490] AXApplicationActivated  role=AXApplication title=Obsidian
+  [   3.677] AXValueChanged  role=AXTextArea title=
+  [   3.678] AXValueChanged  role=AXTextArea title=
+
+— notification counts —
+  AXValueChanged                           8
+  AXSelectedTextChanged                    2
+  AXTitleChanged                           2
+  AXApplicationActivated                   2
+  AXFocusedUIElementChanged                1
+  AXUIElementDestroyed                     1
+
+  total: 16   rate: 0.80 events/sec

@@ -1,0 +1,34 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.482] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.482] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.483] AXValueChanged  role=AXTextArea title=
+  [   0.483] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.483] AXTitleChanged  role=AXStaticText title=
+  [   0.634] AXValueChanged  role=AXTextArea title=
+  [   0.634] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.635] AXTitleChanged  role=AXStaticText title=
+  [   1.325] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.326] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.326] AXValueChanged  role=AXTextArea title=
+  [   1.326] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.326] AXTitleChanged  role=AXStaticText title=
+  [   1.478] AXValueChanged  role=AXTextArea title=
+  [   1.478] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.479] AXTitleChanged  role=AXStaticText title=
+  [   2.187] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.187] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.187] AXValueChanged  role=AXTextArea title=
+  [   2.187] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.187] AXTitleChanged  role=AXStaticText title=
+  [   2.339] AXValueChanged  role=AXTextArea title=
+  [   2.339] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.339] AXTitleChanged  role=AXStaticText title=
+
+— notification counts —
+  AXValueChanged                           12
+  AXSelectedTextChanged                    6
+  AXTitleChanged                           6
+
+  total: 24   rate: 1.20 events/sec

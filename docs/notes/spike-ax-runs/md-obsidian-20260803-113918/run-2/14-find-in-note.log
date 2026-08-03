@@ -1,0 +1,199 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.475] AXSelectedTextChanged  role=AXTextField title=
+  [   0.476] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.476] AXFocusedUIElementChanged  role=AXTextField title=
+  [   0.476] AXValueChanged  role=AXTextField title=
+  [   1.130] AXSelectedTextChanged  role=AXTextField title=
+  [   1.135] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.135] AXValueChanged  role=AXTextArea title=
+  [   1.136] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.136] AXValueChanged  role=AXTextField title=
+  [   1.136] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.136] AXTitleChanged  role=AXStaticText title=
+  [   1.136] AXFocusedUIElementChanged  role=AXTextField title=
+  [   1.136] AXWindowCreated  role=- title=-
+  [   1.136] AXUIElementDestroyed  role=- title=-
+  [   1.136] AXUIElementDestroyed  role=- title=-
+  [   1.211] AXWindowCreated  role=- title=-
+  [   1.217] AXUIElementDestroyed  role=- title=-
+  [   1.218] AXSelectedTextChanged  role=AXTextField title=
+  [   1.218] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.218] AXValueChanged  role=AXTextArea title=
+  [   1.218] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.220] AXValueChanged  role=AXTextField title=
+  [   1.220] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.223] AXTitleChanged  role=AXStaticText title=
+  [   1.223] AXTitleChanged  role=AXStaticText title=
+  [   1.223] AXTitleChanged  role=AXStaticText title=
+  [   1.223] AXWindowCreated  role=- title=-
+  [   1.223] AXUIElementDestroyed  role=- title=-
+  [   1.223] AXUIElementDestroyed  role=- title=-
+  [   1.223] AXUIElementDestroyed  role=- title=-
+  [   1.230] AXSelectedTextChanged  role=AXTextField title=
+  [   1.230] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.230] AXValueChanged  role=AXTextArea title=
+  [   1.230] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.230] AXValueChanged  role=AXTextField title=
+  [   1.230] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.231] AXTitleChanged  role=AXStaticText title=
+  [   1.231] AXTitleChanged  role=AXStaticText title=
+  [   1.397] AXValueChanged  role=AXTextArea title=
+  [   1.397] AXTitleChanged  role=AXStaticText title=
+  [   1.397] AXTitleChanged  role=AXStaticText title=
+  [   1.397] AXTitleChanged  role=AXStaticText title=
+  [   2.115] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.115] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.116] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   2.117] AXValueChanged  role=AXTextArea title=
+  [   2.118] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.118] AXTitleChanged  role=AXStaticText title=
+  [   2.970] AXSelectedTextChanged  role=AXTextField title=
+  [   2.970] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.970] AXFocusedUIElementChanged  role=AXTextField title=
+  [   2.970] AXValueChanged  role=AXTextArea title=
+  [   2.971] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.971] AXValueChanged  role=AXTextField title=
+  [   2.971] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.971] AXTitleChanged  role=AXStaticText title=
+  [   3.622] AXSelectedTextChanged  role=AXTextField title=
+  [   3.623] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.627] AXValueChanged  role=AXTextArea title=
+  [   3.627] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.628] AXValueChanged  role=AXTextField title=
+  [   3.628] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.628] AXTitleChanged  role=AXStaticText title=
+  [   3.628] AXTitleChanged  role=AXStaticText title=
+  [   3.628] AXFocusedUIElementChanged  role=AXTextField title=
+  [   3.628] AXWindowCreated  role=- title=-
+  [   3.628] AXUIElementDestroyed  role=- title=-
+  [   3.628] AXUIElementDestroyed  role=- title=-
+  [   3.642] AXWindowCreated  role=- title=-
+  [   3.648] AXUIElementDestroyed  role=- title=-
+  [   3.652] AXUIElementDestroyed  role=- title=-
+  [   3.652] AXSelectedTextChanged  role=AXTextField title=
+  [   3.652] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.652] AXValueChanged  role=AXTextArea title=
+  [   3.653] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.653] AXValueChanged  role=AXTextField title=
+  [   3.653] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.653] AXTitleChanged  role=AXStaticText title=
+  [   3.653] AXTitleChanged  role=AXStaticText title=
+  [   3.653] AXTitleChanged  role=AXStaticText title=
+  [   3.653] AXTitleChanged  role=AXStaticText title=
+  [   3.660] AXWindowCreated  role=- title=-
+  [   3.667] AXUIElementDestroyed  role=- title=-
+  [   3.668] AXSelectedTextChanged  role=AXTextField title=
+  [   3.668] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.668] AXValueChanged  role=AXTextArea title=
+  [   3.668] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.668] AXValueChanged  role=AXTextField title=
+  [   3.669] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.669] AXTitleChanged  role=AXStaticText title=
+  [   3.669] AXTitleChanged  role=AXStaticText title=
+  [   3.669] AXUIElementDestroyed  role=- title=-
+  [   3.676] AXWindowCreated  role=- title=-
+  [   3.683] AXUIElementDestroyed  role=- title=-
+  [   3.683] AXSelectedTextChanged  role=AXTextField title=
+  [   3.684] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.684] AXValueChanged  role=AXTextArea title=
+  [   3.684] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.684] AXValueChanged  role=AXTextField title=
+  [   3.684] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.684] AXTitleChanged  role=AXStaticText title=
+  [   3.684] AXTitleChanged  role=AXStaticText title=
+  [   3.684] AXUIElementDestroyed  role=- title=-
+  [   3.693] AXWindowCreated  role=- title=-
+  [   3.699] AXUIElementDestroyed  role=- title=-
+  [   3.701] AXWindowCreated  role=- title=-
+  [   3.701] AXUIElementDestroyed  role=- title=-
+  [   3.702] AXSelectedTextChanged  role=AXTextField title=
+  [   3.702] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.702] AXValueChanged  role=AXTextArea title=
+  [   3.702] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.702] AXValueChanged  role=AXTextField title=
+  [   3.702] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.702] AXTitleChanged  role=AXStaticText title=
+  [   3.702] AXTitleChanged  role=AXStaticText title=
+  [   3.703] AXUIElementDestroyed  role=- title=-
+  [   3.703] AXUIElementDestroyed  role=- title=-
+  [   4.007] AXValueChanged  role=AXTextArea title=
+  [   4.007] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.007] AXTitleChanged  role=AXStaticText title=
+  [   4.007] AXTitleChanged  role=AXStaticText title=
+  [   4.007] AXTitleChanged  role=AXStaticText title=
+  [   4.008] AXTitleChanged  role=AXStaticText title=
+  [   4.634] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.634] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.634] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   4.634] AXValueChanged  role=AXTextArea title=
+  [   4.634] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.634] AXTitleChanged  role=AXStaticText title=
+  [   4.798] AXValueChanged  role=AXTextArea title=
+  [   4.798] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   5.502] AXSelectedTextChanged  role=AXTextField title=
+  [   5.502] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   5.502] AXFocusedUIElementChanged  role=AXTextField title=
+  [   5.503] AXValueChanged  role=AXTextArea title=
+  [   5.503] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   5.503] AXValueChanged  role=AXTextField title=
+  [   5.503] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   5.503] AXTitleChanged  role=AXStaticText title=
+  [   5.503] AXTitleChanged  role=AXStaticText title=
+  [   6.159] AXFocusedUIElementChanged  role=AXTextField title=
+  [   6.160] AXWindowCreated  role=- title=-
+  [   6.160] AXUIElementDestroyed  role=- title=-
+  [   6.161] AXSelectedTextChanged  role=AXTextField title=
+  [   6.161] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   6.161] AXValueChanged  role=AXTextArea title=
+  [   6.161] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   6.161] AXValueChanged  role=AXTextField title=
+  [   6.161] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   6.161] AXTitleChanged  role=AXStaticText title=
+  [   6.161] AXTitleChanged  role=AXStaticText title=
+  [   6.162] AXUIElementDestroyed  role=- title=-
+  [   6.178] AXWindowCreated  role=- title=-
+  [   6.184] AXUIElementDestroyed  role=- title=-
+  [   6.186] AXWindowCreated  role=- title=-
+  [   6.187] AXUIElementDestroyed  role=- title=-
+  [   6.187] AXSelectedTextChanged  role=AXTextField title=
+  [   6.191] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   6.192] AXValueChanged  role=AXTextArea title=
+  [   6.192] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   6.192] AXValueChanged  role=AXTextField title=
+  [   6.202] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   6.203] AXTitleChanged  role=AXStaticText title=
+  [   6.203] AXTitleChanged  role=AXStaticText title=
+  [   6.203] AXTitleChanged  role=AXStaticText title=
+  [   6.203] AXUIElementDestroyed  role=- title=-
+  [   6.204] AXUIElementDestroyed  role=- title=-
+  [   6.204] AXWindowCreated  role=- title=-
+  [   6.204] AXUIElementDestroyed  role=- title=-
+  [   6.204] AXSelectedTextChanged  role=AXTextField title=
+  [   6.204] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   6.204] AXValueChanged  role=AXTextArea title=
+  [   6.204] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   6.204] AXValueChanged  role=AXTextField title=
+  [   6.204] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   6.205] AXTitleChanged  role=AXStaticText title=
+  [   6.205] AXTitleChanged  role=AXStaticText title=
+  [   6.205] AXUIElementDestroyed  role=- title=-
+  [   6.354] AXValueChanged  role=AXTextArea title=
+  [   6.354] AXTitleChanged  role=AXStaticText title=
+  [   6.354] AXTitleChanged  role=AXStaticText title=
+  [   7.120] AXSelectedTextChanged  role=AXTextArea title=
+  [   7.120] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   7.120] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   7.120] AXValueChanged  role=AXTextArea title=
+  [   7.120] AXTitleChanged  role=AXStaticText title=
+
+— notification counts —
+  AXValueChanged                           64
+  AXTitleChanged                           40
+  AXSelectedTextChanged                    34
+  AXUIElementDestroyed                     26
+  AXWindowCreated                          13
+  AXFocusedUIElementChanged                9
+
+  total: 186   rate: 9.30 events/sec

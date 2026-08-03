@@ -1,0 +1,64 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.472] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.472] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.472] AXValueChanged  role=AXTextArea title=
+  [   0.473] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.473] AXTitleChanged  role=AXStaticText title=
+  [   0.473] AXTitleChanged  role=AXStaticText title=
+  [   0.473] AXTitleChanged  role=AXStaticText title=
+  [   0.473] AXTitleChanged  role=AXStaticText title=
+  [   0.473] AXTitleChanged  role=AXStaticText title=
+  [   0.473] AXTitleChanged  role=AXStaticText title=
+  [   1.233] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.233] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.234] AXValueChanged  role=AXTextArea title=
+  [   1.234] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.234] AXTitleChanged  role=AXStaticText title=
+  [   1.234] AXTitleChanged  role=AXStaticText title=
+  [   1.235] AXTitleChanged  role=AXStaticText title=
+  [   1.235] AXTitleChanged  role=AXStaticText title=
+  [   1.999] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.999] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.000] AXValueChanged  role=AXTextArea title=
+  [   2.000] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.000] AXTitleChanged  role=AXStaticText title=
+  [   2.000] AXTitleChanged  role=AXStaticText title=
+  [   2.000] AXTitleChanged  role=AXStaticText title=
+  [   2.001] AXTitleChanged  role=AXStaticText title=
+  [   2.001] AXTitleChanged  role=AXStaticText title=
+  [   2.001] AXTitleChanged  role=AXStaticText title=
+  [   2.758] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.758] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.759] AXValueChanged  role=AXTextArea title=
+  [   2.759] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.759] AXTitleChanged  role=AXStaticText title=
+  [   2.760] AXTitleChanged  role=AXStaticText title=
+  [   2.760] AXTitleChanged  role=AXStaticText title=
+  [   2.760] AXTitleChanged  role=AXStaticText title=
+  [   3.508] AXSelectedTextChanged  role=AXTextArea title=
+  [   3.509] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.509] AXValueChanged  role=AXTextArea title=
+  [   3.510] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.510] AXTitleChanged  role=AXStaticText title=
+  [   3.510] AXTitleChanged  role=AXStaticText title=
+  [   3.511] AXTitleChanged  role=AXStaticText title=
+  [   3.511] AXTitleChanged  role=AXStaticText title=
+  [   3.511] AXTitleChanged  role=AXStaticText title=
+  [   3.512] AXTitleChanged  role=AXStaticText title=
+  [   4.269] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.270] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.270] AXValueChanged  role=AXTextArea title=
+  [   4.270] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.270] AXTitleChanged  role=AXStaticText title=
+  [   4.270] AXTitleChanged  role=AXStaticText title=
+  [   4.270] AXTitleChanged  role=AXStaticText title=
+  [   4.270] AXTitleChanged  role=AXStaticText title=
+
+— notification counts —
+  AXTitleChanged                           30
+  AXValueChanged                           12
+  AXSelectedTextChanged                    12
+
+  total: 54   rate: 2.70 events/sec

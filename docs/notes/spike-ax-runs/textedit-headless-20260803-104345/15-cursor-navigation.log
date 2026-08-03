@@ -1,0 +1,19 @@
+Observing com.apple.TextEdit (pid 46436) for 20s — drive the app now…
+
+  [   1.045] AXApplicationActivated  role=AXApplication title=TextEdit
+  [   1.514] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.712] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.919] AXSelectedTextChanged  role=AXTextArea title=-
+  [   2.123] AXSelectedTextChanged  role=AXTextArea title=-
+  [   2.878] AXSelectedTextChanged  role=AXTextArea title=-
+  [   3.071] AXSelectedTextChanged  role=AXTextArea title=-
+  [   3.825] AXSelectedTextChanged  role=AXTextArea title=-
+  [   4.025] AXSelectedTextChanged  role=AXTextArea title=-
+  [   4.232] AXSelectedTextChanged  role=AXTextArea title=-
+  [   4.429] AXSelectedTextChanged  role=AXTextArea title=-
+
+— notification counts —
+  AXSelectedTextChanged                    10
+  AXApplicationActivated                   1
+
+  total: 11   rate: 0.55 events/sec

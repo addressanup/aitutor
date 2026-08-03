@@ -1,4 +1,5 @@
 # name: find bar open search close
+# reps: 2
 activate
 key cmd+f
 sleep 300

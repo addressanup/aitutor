@@ -1,0 +1,48 @@
+Observing com.apple.TextEdit (pid 46436) for 20s — drive the app now…
+
+  [   1.046] AXApplicationActivated  role=AXApplication title=TextEdit
+  [   1.208] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.224] AXValueChanged  role=AXTextArea title=-
+  [   1.349] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.353] AXValueChanged  role=AXTextArea title=-
+  [   1.530] AXMenuItemSelected  role=AXMenuItem title=Select All
+  [   1.540] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.540] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.540] AXWindowCreated  role=AXWindow title=
+  [   1.631] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.728] AXMenuItemSelected  role=AXMenuItem title=Smaller
+  [   1.754] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.756] AXValueChanged  role=AXTextArea title=-
+  [   1.756] AXValueChanged  role=AXPopUpButton title=-
+  [   1.756] AXValueChanged  role=AXPopUpButton title=-
+  [   1.756] AXValueChanged  role=AXPopUpButton title=-
+  [   1.757] AXValueChanged  role=AXPopUpButton title=-
+  [   1.757] AXValueChanged  role=AXComboBox title=-
+  [   1.757] AXValueChanged  role=AXComboBox title=-
+  [   1.757] AXValueChanged  role=AXPopUpButton title=-
+  [   1.757] AXValueChanged  role=AXPopUpButton title=-
+  [   1.758] AXValueChanged  role=AXPopUpButton title=-
+  [   1.758] AXValueChanged  role=AXPopUpButton title=-
+  [   1.758] AXValueChanged  role=AXComboBox title=-
+  [   1.758] AXValueChanged  role=AXComboBox title=-
+  [   1.758] AXValueChanged  role=AXMenuButton title=-
+  [   1.758] AXValueChanged  role=AXMenuButton title=-
+  [   1.759] AXValueChanged  role=AXPopUpButton title=-
+  [   1.759] AXValueChanged  role=AXPopUpButton title=-
+  [   1.759] AXValueChanged  role=AXPopUpButton title=-
+  [   1.759] AXValueChanged  role=AXPopUpButton title=-
+  [   1.830] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.907] AXSelectedTextChanged  role=AXTextArea title=-
+  [   3.914] AXUIElementDestroyed  role=- title=-
+  [  16.216] AXApplicationActivated  role=AXApplication title=TextEdit
+
+— notification counts —
+  AXValueChanged                           21
+  AXSelectedTextChanged                    4
+  AXFocusedUIElementChanged                4
+  AXMenuItemSelected                       2
+  AXApplicationActivated                   2
+  AXUIElementDestroyed                     1
+  AXWindowCreated                          1
+
+  total: 35   rate: 1.75 events/sec

@@ -1,26 +1,115 @@
-# Snapshot-ritual spike — results: com.apple.TextEdit, "File > Export as PDF…" (headless protocol validation)
+# Snapshot-ritual spike — results: com.apple.TextEdit, "File > Export as PDF…"
 
-**Date:** 2026-08-03 · **Machine:** dev Mac (Darwin 25.5.0, Apple Silicon) · **Mode:** fully headless — `shell/Scripts/snapshot-ritual-run.sh` looping the app-generic `snapshot-spike` binary, sheet dismissed between runs by `axdrive`.
-**Raw numbers:** `docs/notes/spike-snapshot-runs/textedit-headless-20260803-091351/` (50 per-run logs + timings).
+**Date:** 2026-08-03 · **Machine:** dev Mac (Darwin 25.5.0, Apple Silicon) · **Mode:** fully headless — `shell/Scripts/snapshot-ritual-run.sh` looping the app-generic `snapshot-spike` binary.
+**Raw numbers:** `docs/notes/spike-snapshot-runs/textedit-headless-20260803-091351/` (the superseded run) and the re-run directory recorded below.
 
-## Result
+> **Correction (2026-08-03, same day).** An earlier version of this document reported
+> "50/50, 0 failures, p95 2.188 s — **bar status on this machine: met**". **That
+> conclusion was wrong and is withdrawn.** The measurement did not measure the ritual.
+> The numbers themselves were real; what they measured was not what the document said.
+> Details below, kept in full because the failure mode is instructive and cheap to
+> repeat.
 
-| Metric | Value | Phase 0 bar |
-|---|---|---|
-| Consecutive invocations | 50 | 50 |
-| Failures | **0** | 0 |
-| p50 | 2.164 s | — |
-| **p95** | **2.188 s** | within 2–4 s |
-| min / max | 2.146 s / 2.649 s | — |
+## What the superseded run actually measured
 
-**Bar status on this machine: met** — 50/50, p95 comfortably inside the window, with remarkably tight dispersion (p95−p50 = 24 ms; the single 2.65 s outlier still lands mid-window).
+`SnapshotSpike` polled for a save sheet 20 × 100 ms and then gave up. Across all 50
+committed runs:
 
-## Scope — what this measured and what it didn't
+- **50/50 logs read `save sheet appeared: no`** — the sheet was never detected once.
+- Menu resolve + press completed in **0.016–0.033 s**.
+- Every total landed in **2.146–2.191 s** (one 2.649 s outlier), i.e.
+  `press + 2.00 s poll ceiling + ~6 ms × 20 AX reads`.
 
-- Measured: menu-path resolve → AX press → save-sheet appearance, per invocation, with the sheet dismissed (Esc) between runs. The spike binary's own timing instrumentation was used unmodified.
-- **Not yet measured:** completing the export to a file (sheet → filename → confirm → file-exists assertion) and **focus restore** to the prior app — both are part of the real ritual and land when the loop is pointed at the wedge app's export flow (the full ritual is what carries the ≥99% M0 gate).
-- **Replication on a second Mac is outstanding** — the Phase 0 bar requires it verbatim ("replicated on a second Mac before the review"). The harness is one command on any Mac with the repo cloned, the target app installed, and Accessibility granted to the terminal: `make spike-snapshot-run TARGET=<bundle-id> MENU="File>…" RUNS=50`.
+So the reported **p95 of 2.188 s was the poll timeout constant**, not a latency. It
+would reproduce at ~2.15 s on any Mac, because it was timing a two-second sleep. The
+loop's success test required only `success: yes` from the *press* line plus a
+parseable total, so "50 consecutive, 0 failures" meant **50 menu presses dispatched**,
+not 50 rituals completed. The tight dispersion the old document praised
+(p95 − p50 = 24 ms) was the giveaway: that is the signature of a constant, not of a
+UI operation.
 
-## Read-through to the assessment contract
+## Root causes, each confirmed by direct observation
 
-A ~2.2 s p95 for resolve→press→sheet on a lightweight AppKit app leaves roughly half the 2–4 s budget for the heavier half of the real ritual (export completion + focus restore) before the window is threatened. No evidence here forces an assessment-contract redesign; the wedge-app run decides it.
+1. **The sheet was there the whole time; the probe looked one level too deep.**
+   When a sheet is up, `kAXFocusedWindowAttribute` returns **the sheet itself**. The
+   probe asked whether the focused window *had a child* of role `AXSheet`, which can
+   never match. With the predicate corrected, the panel is detected in **0.26–0.48 s**.
+   The out-of-process `com.apple.appkit.xpc.openAndSavePanelService` does spawn, but
+   AppKit bridges the panel's tree back into the app, so it was reachable all along.
+
+2. **`AXPress` on a background app's menu item silently does nothing.** It resolves,
+   returns success, and never invokes the command. The old spike never activated the
+   target. `snapshot-spike` now activates first, and refuses to run if it cannot.
+
+3. **The between-run reset never reset anything.** The loop dismissed state with
+   `activate; key esc`, but keystrokes posted to the target pid never reach an
+   out-of-process panel. One sheet opened on the first run and stood for all 50; every
+   later "press" was dispatched into an app that already had a modal sheet up.
+
+## The finding that matters to the product
+
+**An `NSSavePanel` cannot be driven to completion through Accessibility alone.**
+Every mechanism was tried against a real panel and observed directly:
+
+| Mechanism | Result |
+|---|---|
+| Read the panel's tree (roles, ids, values) | **Works** — `AXSheet id=save-panel`, `AXTextField id=saveAsNameTextField`, `AXButton id=OKButton` |
+| `AXPress` the Cancel button | **Works** — panel dismisses cleanly, focus returns |
+| `setValue` the filename field | **Displays**, but does **not** bind to the panel's model — a later replace-confirmation named the *default* filename, not the one set |
+| `AXConfirm` the filename field with an absolute path | Rejected — slashes are not a valid file name, and AX-set text does not trigger the path-resolution the keystroke path has |
+| `AXPress` the Save button | Panel dismisses, **no file written** |
+| Click Save at its own AX frame, global HID tap | Panel dismisses, **no file written** |
+| Global Return (default-button activation) | Engages the save path — surfaced a **replace-confirmation sheet**, proving the mechanism reaches the panel |
+| `key esc` / any input posted to the target pid | **Never arrives** — the panel is a different process |
+
+The consequence for the executor: **completing an export ritual requires synthetic
+input on the global HID tap**, not only `CGEventPostToPid`. That interacts directly
+with the possession design — such events must carry the synthetic tag and pass the
+possession gate, and the whitelist check cannot be a per-pid frontmost test alone,
+because the process receiving the input is an AppKit XPC service the learner never
+chose. This belongs in the Task 5/6 design, not only in spike code.
+
+A second-order hazard, found the hard way: driving panels with global keystrokes is
+**unsafe under failure**. When a panel failed to appear, typed text landed in the
+learner's open document instead. Any production path that falls back to global typing
+needs a panel-present precondition checked immediately before each post, and should
+prefer a click at a known element frame over typing.
+
+## Status against the Phase 0 bar
+
+**Not met, and not yet measurable on this target.** The bar is "50 consecutive scripted
+invocations, 0 failures, p95 within the 2–4 s window, replicated on a second Mac". The
+repaired harness now measures the right thing — resolve → press → panel → fill →
+confirm → **file on disk** → **focus restored**, with per-phase p50/p95 — and a run
+counts only if the artifact landed and focus returned. On TextEdit the ritual stops at
+`confirm`, for the reasons tabulated above.
+
+Per Phase 0's own instruction, a miss "produces a written gap analysis feeding the ≥99%
+M0 gate plan"; this document is that analysis. What the repaired instrument does
+establish on TextEdit:
+
+| Phase | Timing |
+|---|---|
+| menu resolve | 0.001–0.028 s |
+| press | 0.001–0.029 s |
+| panel present | **0.26–0.48 s** |
+| fill | +0.02 s |
+| confirm | +0.07–0.12 s |
+| file landed | **not reached** on this target |
+| focus restored | not reached |
+
+The measured front half of the ritual costs well under 0.5 s, leaving the great
+majority of the 2–4 s window for the write and focus restore. Nothing here forces an
+assessment-contract redesign; it does mean **the ritual's completion channel is an
+open design question**, and that the wedge-app run is what closes it.
+
+## Outstanding
+
+- **Second-Mac replication remains outstanding**, and is now correctly *blocked* rather
+  than merely pending: replicating the superseded loop would have reproduced a timeout
+  constant. The delivery plan already schedules two Mac minis in September; that is the
+  intended replication fleet.
+- The completed ritual needs a target whose save panel is in-process, or a decision to
+  drive panels with tagged global input. Figma is unsandboxed and is the next target.
+- Re-run command, unchanged in shape:
+  `make spike-snapshot-run TARGET=<bundle-id> MENU="File>…" RUNS=50`

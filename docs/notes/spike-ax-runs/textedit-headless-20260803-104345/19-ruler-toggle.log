@@ -1,0 +1,38 @@
+Observing com.apple.TextEdit (pid 46436) for 20s — drive the app now…
+
+  [   1.014] AXApplicationActivated  role=AXApplication title=TextEdit
+  [   1.505] AXMenuItemSelected  role=AXMenuItem title=Show Ruler
+  [   1.525] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.526] AXUIElementDestroyed  role=- title=-
+  [   1.607] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.744] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.749] AXValueChanged  role=AXTextArea title=-
+  [   1.896] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.901] AXValueChanged  role=AXTextArea title=-
+  [   2.012] AXSelectedTextChanged  role=AXTextArea title=-
+  [   2.017] AXValueChanged  role=AXTextArea title=-
+  [   2.362] AXMenuItemSelected  role=AXMenuItem title=Show Ruler
+  [   2.372] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   2.464] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.225] AXMenuItemSelected  role=AXMenuItem title=Show Ruler
+  [   3.234] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.286] AXSelectedTextChanged  role=AXTextArea title=-
+  [   3.291] AXValueChanged  role=AXTextArea title=-
+  [   3.327] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.442] AXSelectedTextChanged  role=AXTextArea title=-
+  [   3.447] AXValueChanged  role=AXTextArea title=-
+  [   4.074] AXMenuItemSelected  role=AXMenuItem title=Show Ruler
+  [   4.088] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   4.174] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   4.924] AXSelectedTextChanged  role=AXTextArea title=-
+  [   4.927] AXValueChanged  role=AXTextArea title=-
+
+— notification counts —
+  AXFocusedUIElementChanged                8
+  AXSelectedTextChanged                    6
+  AXValueChanged                           6
+  AXMenuItemSelected                       4
+  AXUIElementDestroyed                     1
+  AXApplicationActivated                   1
+
+  total: 26   rate: 1.30 events/sec

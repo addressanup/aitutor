@@ -1,0 +1,44 @@
+Observing com.apple.TextEdit (pid 46436) for 20s — drive the app now…
+
+  [   1.518] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.714] AXMenuItemSelected  role=AXMenuItem title=Paste
+  [   1.736] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.737] AXValueChanged  role=AXPopUpButton title=-
+  [   1.737] AXValueChanged  role=AXPopUpButton title=-
+  [   1.738] AXValueChanged  role=AXPopUpButton title=-
+  [   1.738] AXValueChanged  role=AXPopUpButton title=-
+  [   1.738] AXValueChanged  role=AXComboBox title=-
+  [   1.738] AXValueChanged  role=AXComboBox title=-
+  [   1.739] AXValueChanged  role=AXPopUpButton title=-
+  [   1.739] AXValueChanged  role=AXPopUpButton title=-
+  [   1.739] AXValueChanged  role=AXPopUpButton title=-
+  [   1.739] AXValueChanged  role=AXPopUpButton title=-
+  [   1.739] AXValueChanged  role=AXComboBox title=-
+  [   1.740] AXValueChanged  role=AXComboBox title=-
+  [   1.740] AXValueChanged  role=AXMenuButton title=-
+  [   1.740] AXValueChanged  role=AXMenuButton title=-
+  [   1.740] AXValueChanged  role=AXPopUpButton title=-
+  [   1.740] AXValueChanged  role=AXPopUpButton title=-
+  [   1.740] AXValueChanged  role=AXPopUpButton title=-
+  [   1.740] AXValueChanged  role=AXPopUpButton title=-
+  [   1.741] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.741] AXValueChanged  role=AXTextArea title=-
+  [   1.816] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   2.471] AXMenuItemSelected  role=AXMenuItem title=Paste
+  [   2.482] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   2.483] AXSelectedTextChanged  role=AXTextArea title=-
+  [   2.483] AXValueChanged  role=AXTextArea title=-
+  [   2.574] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.230] AXMenuItemSelected  role=AXMenuItem title=Paste
+  [   3.242] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.242] AXSelectedTextChanged  role=AXTextArea title=-
+  [   3.243] AXValueChanged  role=AXTextArea title=-
+  [   3.331] AXFocusedUIElementChanged  role=AXTextArea title=-
+
+— notification counts —
+  AXValueChanged                           21
+  AXFocusedUIElementChanged                6
+  AXSelectedTextChanged                    4
+  AXMenuItemSelected                       3
+
+  total: 34   rate: 1.70 events/sec

@@ -1,4 +1,5 @@
 # name: new paragraph typing
+# reps: 2
 activate
 key cmd+right
 key return

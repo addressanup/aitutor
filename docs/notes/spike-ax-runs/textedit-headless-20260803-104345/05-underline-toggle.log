@@ -1,0 +1,80 @@
+Observing com.apple.TextEdit (pid 46436) for 20s — drive the app now…
+
+  [   1.036] AXApplicationActivated  role=AXApplication title=TextEdit
+  [   1.530] AXMenuItemSelected  role=AXMenuItem title=Select All
+  [   1.533] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.533] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.632] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.729] AXMenuItemSelected  role=AXMenuItem title=Underline
+  [   1.752] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.752] AXValueChanged  role=AXPopUpButton title=-
+  [   1.752] AXValueChanged  role=AXPopUpButton title=-
+  [   1.753] AXValueChanged  role=AXPopUpButton title=-
+  [   1.753] AXValueChanged  role=AXPopUpButton title=-
+  [   1.753] AXValueChanged  role=AXComboBox title=-
+  [   1.753] AXValueChanged  role=AXComboBox title=-
+  [   1.754] AXValueChanged  role=AXPopUpButton title=-
+  [   1.754] AXValueChanged  role=AXPopUpButton title=-
+  [   1.754] AXValueChanged  role=AXPopUpButton title=-
+  [   1.754] AXValueChanged  role=AXPopUpButton title=-
+  [   1.755] AXValueChanged  role=AXComboBox title=-
+  [   1.755] AXValueChanged  role=AXComboBox title=-
+  [   1.755] AXValueChanged  role=AXMenuButton title=-
+  [   1.755] AXValueChanged  role=AXMenuButton title=-
+  [   1.756] AXValueChanged  role=AXPopUpButton title=-
+  [   1.756] AXValueChanged  role=AXPopUpButton title=-
+  [   1.756] AXValueChanged  role=AXPopUpButton title=-
+  [   1.756] AXValueChanged  role=AXPopUpButton title=-
+  [   1.831] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   2.485] AXMenuItemSelected  role=AXMenuItem title=Underline
+  [   2.507] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   2.508] AXValueChanged  role=AXPopUpButton title=-
+  [   2.508] AXValueChanged  role=AXPopUpButton title=-
+  [   2.508] AXValueChanged  role=AXPopUpButton title=-
+  [   2.509] AXValueChanged  role=AXPopUpButton title=-
+  [   2.509] AXValueChanged  role=AXComboBox title=-
+  [   2.509] AXValueChanged  role=AXComboBox title=-
+  [   2.509] AXValueChanged  role=AXPopUpButton title=-
+  [   2.509] AXValueChanged  role=AXPopUpButton title=-
+  [   2.510] AXValueChanged  role=AXPopUpButton title=-
+  [   2.510] AXValueChanged  role=AXPopUpButton title=-
+  [   2.510] AXValueChanged  role=AXComboBox title=-
+  [   2.510] AXValueChanged  role=AXComboBox title=-
+  [   2.510] AXValueChanged  role=AXMenuButton title=-
+  [   2.511] AXValueChanged  role=AXMenuButton title=-
+  [   2.511] AXValueChanged  role=AXPopUpButton title=-
+  [   2.511] AXValueChanged  role=AXPopUpButton title=-
+  [   2.511] AXValueChanged  role=AXPopUpButton title=-
+  [   2.511] AXValueChanged  role=AXPopUpButton title=-
+  [   2.587] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.242] AXMenuItemSelected  role=AXMenuItem title=Underline
+  [   3.263] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.263] AXValueChanged  role=AXPopUpButton title=-
+  [   3.264] AXValueChanged  role=AXPopUpButton title=-
+  [   3.264] AXValueChanged  role=AXPopUpButton title=-
+  [   3.264] AXValueChanged  role=AXPopUpButton title=-
+  [   3.265] AXValueChanged  role=AXComboBox title=-
+  [   3.265] AXValueChanged  role=AXComboBox title=-
+  [   3.265] AXValueChanged  role=AXPopUpButton title=-
+  [   3.266] AXValueChanged  role=AXPopUpButton title=-
+  [   3.266] AXValueChanged  role=AXPopUpButton title=-
+  [   3.266] AXValueChanged  role=AXPopUpButton title=-
+  [   3.267] AXValueChanged  role=AXComboBox title=-
+  [   3.267] AXValueChanged  role=AXComboBox title=-
+  [   3.267] AXValueChanged  role=AXMenuButton title=-
+  [   3.268] AXValueChanged  role=AXMenuButton title=-
+  [   3.268] AXValueChanged  role=AXPopUpButton title=-
+  [   3.268] AXValueChanged  role=AXPopUpButton title=-
+  [   3.269] AXValueChanged  role=AXPopUpButton title=-
+  [   3.269] AXValueChanged  role=AXPopUpButton title=-
+  [   3.344] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   4.009] AXSelectedTextChanged  role=AXTextArea title=-
+
+— notification counts —
+  AXValueChanged                           54
+  AXFocusedUIElementChanged                8
+  AXMenuItemSelected                       4
+  AXSelectedTextChanged                    2
+  AXApplicationActivated                   1
+
+  total: 69   rate: 3.45 events/sec

@@ -1,0 +1,47 @@
+Observing com.apple.TextEdit (pid 46436) for 20s — drive the app now…
+
+  [   1.031] AXApplicationActivated  role=AXApplication title=TextEdit
+  [   1.188] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.193] AXValueChanged  role=AXTextArea title=-
+  [   1.370] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.374] AXValueChanged  role=AXTextArea title=-
+  [   1.509] AXMenuItemSelected  role=AXMenuItem title=Select All
+  [   1.521] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.521] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.521] AXWindowCreated  role=AXWindow title=
+  [   1.610] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.723] AXMenuItemSelected  role=AXMenuItem title=Bigger
+  [   1.797] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.797] AXValueChanged  role=AXTextArea title=-
+  [   1.798] AXValueChanged  role=AXPopUpButton title=-
+  [   1.798] AXValueChanged  role=AXPopUpButton title=-
+  [   1.798] AXValueChanged  role=AXPopUpButton title=-
+  [   1.798] AXValueChanged  role=AXPopUpButton title=-
+  [   1.799] AXValueChanged  role=AXComboBox title=-
+  [   1.799] AXValueChanged  role=AXComboBox title=-
+  [   1.799] AXValueChanged  role=AXPopUpButton title=-
+  [   1.800] AXValueChanged  role=AXPopUpButton title=-
+  [   1.800] AXValueChanged  role=AXPopUpButton title=-
+  [   1.800] AXValueChanged  role=AXPopUpButton title=-
+  [   1.801] AXValueChanged  role=AXComboBox title=-
+  [   1.801] AXValueChanged  role=AXComboBox title=-
+  [   1.801] AXValueChanged  role=AXMenuButton title=-
+  [   1.802] AXValueChanged  role=AXMenuButton title=-
+  [   1.802] AXValueChanged  role=AXPopUpButton title=-
+  [   1.802] AXValueChanged  role=AXPopUpButton title=-
+  [   1.802] AXValueChanged  role=AXPopUpButton title=-
+  [   1.803] AXValueChanged  role=AXPopUpButton title=-
+  [   1.823] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.891] AXSelectedTextChanged  role=AXTextArea title=-
+  [   3.910] AXUIElementDestroyed  role=- title=-
+
+— notification counts —
+  AXValueChanged                           21
+  AXSelectedTextChanged                    4
+  AXFocusedUIElementChanged                4
+  AXMenuItemSelected                       2
+  AXUIElementDestroyed                     1
+  AXApplicationActivated                   1
+  AXWindowCreated                          1
+
+  total: 34   rate: 1.70 events/sec

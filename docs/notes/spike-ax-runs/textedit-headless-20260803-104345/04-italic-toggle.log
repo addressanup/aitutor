@@ -1,0 +1,77 @@
+Observing com.apple.TextEdit (pid 46436) for 20s — drive the app now…
+
+  [   1.029] AXApplicationActivated  role=AXApplication title=TextEdit
+  [   1.525] AXMenuItemSelected  role=AXMenuItem title=Select All
+  [   1.528] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.529] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.628] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.725] AXMenuItemSelected  role=AXMenuItem title=Italic
+  [   1.747] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.748] AXValueChanged  role=AXPopUpButton title=-
+  [   1.748] AXValueChanged  role=AXPopUpButton title=-
+  [   1.748] AXValueChanged  role=AXPopUpButton title=-
+  [   1.749] AXValueChanged  role=AXPopUpButton title=-
+  [   1.749] AXValueChanged  role=AXComboBox title=-
+  [   1.749] AXValueChanged  role=AXComboBox title=-
+  [   1.749] AXValueChanged  role=AXPopUpButton title=-
+  [   1.749] AXValueChanged  role=AXPopUpButton title=-
+  [   1.750] AXValueChanged  role=AXPopUpButton title=-
+  [   1.750] AXValueChanged  role=AXComboBox title=-
+  [   1.750] AXValueChanged  role=AXComboBox title=-
+  [   1.750] AXValueChanged  role=AXMenuButton title=-
+  [   1.750] AXValueChanged  role=AXMenuButton title=-
+  [   1.750] AXValueChanged  role=AXPopUpButton title=-
+  [   1.751] AXValueChanged  role=AXPopUpButton title=-
+  [   1.751] AXValueChanged  role=AXPopUpButton title=-
+  [   1.751] AXValueChanged  role=AXPopUpButton title=-
+  [   1.826] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   2.485] AXMenuItemSelected  role=AXMenuItem title=Italic
+  [   2.504] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   2.504] AXValueChanged  role=AXPopUpButton title=-
+  [   2.505] AXValueChanged  role=AXPopUpButton title=-
+  [   2.505] AXValueChanged  role=AXPopUpButton title=-
+  [   2.505] AXValueChanged  role=AXPopUpButton title=-
+  [   2.505] AXValueChanged  role=AXComboBox title=-
+  [   2.506] AXValueChanged  role=AXComboBox title=-
+  [   2.506] AXValueChanged  role=AXPopUpButton title=-
+  [   2.506] AXValueChanged  role=AXPopUpButton title=-
+  [   2.507] AXValueChanged  role=AXPopUpButton title=-
+  [   2.507] AXValueChanged  role=AXComboBox title=-
+  [   2.507] AXValueChanged  role=AXComboBox title=-
+  [   2.507] AXValueChanged  role=AXMenuButton title=-
+  [   2.508] AXValueChanged  role=AXMenuButton title=-
+  [   2.508] AXValueChanged  role=AXPopUpButton title=-
+  [   2.508] AXValueChanged  role=AXPopUpButton title=-
+  [   2.508] AXValueChanged  role=AXPopUpButton title=-
+  [   2.509] AXValueChanged  role=AXPopUpButton title=-
+  [   2.587] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.242] AXMenuItemSelected  role=AXMenuItem title=Italic
+  [   3.265] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.265] AXValueChanged  role=AXPopUpButton title=-
+  [   3.265] AXValueChanged  role=AXPopUpButton title=-
+  [   3.265] AXValueChanged  role=AXPopUpButton title=-
+  [   3.266] AXValueChanged  role=AXPopUpButton title=-
+  [   3.266] AXValueChanged  role=AXComboBox title=-
+  [   3.266] AXValueChanged  role=AXComboBox title=-
+  [   3.266] AXValueChanged  role=AXPopUpButton title=-
+  [   3.266] AXValueChanged  role=AXPopUpButton title=-
+  [   3.266] AXValueChanged  role=AXPopUpButton title=-
+  [   3.267] AXValueChanged  role=AXComboBox title=-
+  [   3.267] AXValueChanged  role=AXComboBox title=-
+  [   3.267] AXValueChanged  role=AXMenuButton title=-
+  [   3.267] AXValueChanged  role=AXMenuButton title=-
+  [   3.267] AXValueChanged  role=AXPopUpButton title=-
+  [   3.268] AXValueChanged  role=AXPopUpButton title=-
+  [   3.268] AXValueChanged  role=AXPopUpButton title=-
+  [   3.268] AXValueChanged  role=AXPopUpButton title=-
+  [   3.343] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   4.001] AXSelectedTextChanged  role=AXTextArea title=-
+
+— notification counts —
+  AXValueChanged                           51
+  AXFocusedUIElementChanged                8
+  AXMenuItemSelected                       4
+  AXSelectedTextChanged                    2
+  AXApplicationActivated                   1
+
+  total: 66   rate: 3.30 events/sec

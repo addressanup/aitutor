@@ -37,9 +37,24 @@ make demo             # the same, one-shot and in-process (also the CI smoke)
 Spikes (app-generic diagnostic probes — grant your **terminal** Accessibility once; CLI tools inherit the terminal's TCC identity):
 
 ```sh
+# One-shot probes.
 make spike-ax TARGET=com.apple.TextEdit SECONDS=60
 make spike-snapshot TARGET=com.apple.TextEdit MENU="File>Export as PDF…"
+
+# The two acceptance protocols — these produce the results committed under docs/notes/,
+# and these are what a second machine runs to replicate.
+make spike-ax-run TARGET=<bundle-id> DRIVERS=spikes/drivers/<bundle-id>
+make spike-snapshot-run TARGET=<bundle-id> MENU="File>…" RUNS=50
+
+# Author driver sets from what the app actually exposes, not from memory:
+./shell/.build/debug/axprobe --bundle-id <id> --dump-menu
+./shell/.build/debug/axprobe --bundle-id <id> --dump-tree --depth 6
 ```
+
+Density verdicts are computed, not typed in: `shell/Scripts/ax-density-verdict.mjs`
+scores each action Usable/Partial/Silent from the run's own logs, so the ≥17/20 bar
+can be recomputed by anyone from the committed evidence. Its classifier tests run in
+CI (`make spike-verdict-test`) and need neither a TCC grant nor the target app.
 
 ## The TCC dev loop (read before debugging permissions)
 

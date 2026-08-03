@@ -1,0 +1,28 @@
+Observing com.apple.TextEdit (pid 46436) for 20s — drive the app now…
+
+  [   1.538] AXMenuItemSelected  role=AXMenuItem title=Undo Cut
+  [   1.550] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.551] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.551] AXValueChanged  role=AXTextArea title=-
+  [   1.551] AXSelectedTextChanged  role=AXTextArea title=-
+  [   1.640] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   2.299] AXMenuItemSelected  role=AXMenuItem title=Undo Paste
+  [   2.312] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   2.313] AXSelectedTextChanged  role=AXTextArea title=-
+  [   2.313] AXValueChanged  role=AXTextArea title=-
+  [   2.313] AXSelectedTextChanged  role=AXTextArea title=-
+  [   2.401] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.054] AXMenuItemSelected  role=AXMenuItem title=Undo Cut
+  [   3.066] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.067] AXSelectedTextChanged  role=AXTextArea title=-
+  [   3.067] AXValueChanged  role=AXTextArea title=-
+  [   3.067] AXSelectedTextChanged  role=AXTextArea title=-
+  [   3.155] AXFocusedUIElementChanged  role=AXTextArea title=-
+
+— notification counts —
+  AXFocusedUIElementChanged                6
+  AXSelectedTextChanged                    6
+  AXMenuItemSelected                       3
+  AXValueChanged                           3
+
+  total: 18   rate: 0.90 events/sec

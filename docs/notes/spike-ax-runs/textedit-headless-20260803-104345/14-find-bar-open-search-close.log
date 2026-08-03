@@ -1,0 +1,37 @@
+Observing com.apple.TextEdit (pid 46436) for 20s — drive the app now…
+
+  [   1.509] AXMenuItemSelected  role=AXMenuItem title=Find…
+  [   1.585] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   1.586] AXUIElementDestroyed  role=- title=-
+  [   1.587] AXFocusedUIElementChanged  role=AXTextField title=-
+  [   1.588] AXSelectedTextChanged  role=AXTextField title=-
+  [   1.588] AXValueChanged  role=AXTextField title=-
+  [   1.588] AXUIElementDestroyed  role=- title=-
+  [   1.610] AXFocusedUIElementChanged  role=AXTextField title=-
+  [   2.376] AXFocusedUIElementChanged  role=AXWindow title=aitutor-spike-textedit.rtf
+  [   2.385] AXFocusedUIElementChanged  role=AXTextField title=-
+  [   2.386] AXSelectedTextChanged  role=AXTextField title=-
+  [   3.132] AXFocusedUIElementChanged  role=AXWindow title=aitutor-spike-textedit.rtf
+  [   3.158] AXFocusedUIElementChanged  role=AXTextArea title=-
+  [   3.158] AXUIElementDestroyed  role=- title=-
+  [   4.673] AXSelectedTextChanged  role=AXTextArea title=-
+  [   4.695] AXValueChanged  role=AXTextArea title=-
+  [   4.695] AXSelectedTextChanged  role=AXTextArea title=-
+  [   4.695] AXValueChanged  role=AXTextArea title=-
+  [   4.695] AXSelectedTextChanged  role=AXTextArea title=-
+  [   4.696] AXValueChanged  role=AXTextArea title=-
+  [   4.700] AXSelectedTextChanged  role=AXTextArea title=-
+  [   4.707] AXValueChanged  role=AXTextArea title=-
+  [   4.855] AXSelectedTextChanged  role=AXTextArea title=-
+  [   4.859] AXValueChanged  role=AXTextArea title=-
+  [  11.866] AXApplicationActivated  role=AXApplication title=TextEdit
+
+— notification counts —
+  AXFocusedUIElementChanged                7
+  AXSelectedTextChanged                    7
+  AXValueChanged                           6
+  AXUIElementDestroyed                     3
+  AXApplicationActivated                   1
+  AXMenuItemSelected                       1
+
+  total: 25   rate: 1.25 events/sec

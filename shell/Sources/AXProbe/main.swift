@@ -160,9 +160,10 @@ struct AXProbe: AsyncParsableCommand {
             let sub = el.subrole.map { " subrole=\($0)" } ?? ""
             let ident = el.identifier.map { $0.isEmpty ? "" : " id=\($0)" } ?? ""
             let value = el.stringValue.map { $0.isEmpty ? "" : " value=\($0.prefix(40))" } ?? ""
+            let disabled = el.isEnabled == false ? " DISABLED" : ""
             let acts = el.actions().filter { $0 != "AXShowMenu" }
             let actions = acts.isEmpty ? "" : " actions=[\(acts.joined(separator: ","))]"
-            print("  \(String(repeating: "  ", count: d))\(role)\(sub)\(title)\(ident)\(value)\(actions)")
+            print("  \(String(repeating: "  ", count: d))\(role)\(sub)\(title)\(ident)\(value)\(actions)\(disabled)")
         }
         let total = roleCounts.values.reduce(0, +)
         print("\n— role counts (n=\(total)) —")

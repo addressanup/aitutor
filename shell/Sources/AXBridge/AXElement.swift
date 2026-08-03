@@ -45,6 +45,9 @@ public struct AXElement {
     public var subrole: String? { attribute(kAXSubroleAttribute) as? String }
     public var title: String? { attribute(kAXTitleAttribute) as? String }
     public var identifier: String? { attribute(kAXIdentifierAttribute) as? String }
+    /// Whether the element can be actuated. A disabled button swallows clicks silently,
+    /// which is indistinguishable from a click that missed.
+    public var isEnabled: Bool? { attribute(kAXEnabledAttribute) as? Bool }
     public var stringValue: String? { attribute(kAXValueAttribute) as? String }
 
     public func children() -> [AXElement] {

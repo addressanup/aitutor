@@ -1,0 +1,29 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.021] AXApplicationActivated  role=AXApplication title=Obsidian
+  [   0.552] AXMenuItemSelected  role=AXMenuItem title=Select All
+  [   0.553] AXFocusedUIElementChanged  role=AXTextField title=
+  [   0.554] AXSelectedTextChanged  role=AXTextField title=
+  [   0.554] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.654] AXFocusedUIElementChanged  role=AXTextField title=
+  [   0.733] AXSelectedTextChanged  role=AXTextField title=
+  [   0.733] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.936] AXSelectedTextChanged  role=AXTextField title=
+  [   0.937] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.139] AXMenuItemSelected  role=AXMenuItem title=Italics
+  [   1.139] AXFocusedUIElementChanged  role=AXTextField title=
+  [   1.240] AXFocusedUIElementChanged  role=AXTextField title=
+  [   1.325] AXMenuItemSelected  role=AXMenuItem title=Italics
+  [   2.186] AXMenuItemSelected  role=AXMenuItem title=Italics
+  [   2.388] AXMenuItemSelected  role=AXMenuItem title=Italics
+  [   3.241] AXMenuItemSelected  role=AXMenuItem title=Italics
+  [   3.444] AXMenuItemSelected  role=AXMenuItem title=Italics
+
+— notification counts —
+  AXMenuItemSelected                       7
+  AXSelectedTextChanged                    6
+  AXFocusedUIElementChanged                4
+  AXApplicationActivated                   1
+
+  total: 18   rate: 0.90 events/sec

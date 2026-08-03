@@ -16,7 +16,8 @@
 #
 # Usage:
 #   snapshot-ritual-run.sh --bundle-id com.example.App --menu "File>Export as PDF…" \
-#       [--runs 50] [--save-to DIR] [--confirm-button Save] [--dismiss CancelButton] [--out DIR]
+#       [--runs 50] [--save-to DIR] [--confirm-button Save] [--confirm-method ax|click|return] \
+#       [--pre "type z"] [--dismiss CancelButton] [--out DIR]
 set -euo pipefail
 
 BUNDLE_ID=""
@@ -24,6 +25,8 @@ MENU_PATH=""
 RUNS=50
 SAVE_TO="/tmp/aitutor-spike-out"
 CONFIRM_BUTTON="Save"
+CONFIRM_METHOD=""
+PRE_KEYS=""
 DISMISS="CancelButton"
 OUT_DIR=""
 
@@ -34,6 +37,8 @@ while [ $# -gt 0 ]; do
     --runs) RUNS="$2"; shift 2 ;;
     --save-to) SAVE_TO="$2"; shift 2 ;;
     --confirm-button) CONFIRM_BUTTON="$2"; shift 2 ;;
+    --confirm-method) CONFIRM_METHOD="$2"; shift 2 ;;
+    --pre) PRE_KEYS="$2"; shift 2 ;;
     --dismiss) DISMISS="$2"; shift 2 ;;
     --out) OUT_DIR="$2"; shift 2 ;;
     *) echo "unknown arg: $1" >&2; exit 2 ;;
@@ -67,11 +72,20 @@ i=0
 while [ "$i" -lt "$RUNS" ]; do
   i=$((i + 1))
   log=$(printf '%s/run-%03d.log' "$OUT_DIR" "$i")
-  name=$(printf 'ritual-%03d' "$i")
+  # Optional per-run preparation, e.g. dirtying a document so that Save has something to
+  # write. Without it a "save" ritual over an unmodified document is a silent no-op and
+  # the loop measures nothing at all.
+  if [ -n "$PRE_KEYS" ]; then
+    printf 'activate\n%s\nsleep 200\n' "$PRE_KEYS" | "$DRIVE" --bundle-id "$BUNDLE_ID" --script - >/dev/null 2>&1 || true
+  fi
   set +e
+  # No --filename: AX setValue on a save panel's name field updates the display but does
+  # not bind to the panel's model, so dictating a per-run name would be a fiction. The
+  # spike reads the name the app actually intends and proves the artifact belongs to this
+  # run by mtime instead.
   "$SPIKE" --bundle-id "$BUNDLE_ID" --menu-path "$MENU_PATH" \
-           --save-to "$SAVE_TO" --filename "$name" \
-           --confirm-button "$CONFIRM_BUTTON" > "$log" 2>&1
+           --save-to "$SAVE_TO" --confirm-button "$CONFIRM_BUTTON" \
+           ${CONFIRM_METHOD:+--confirm-method "$CONFIRM_METHOD"} > "$log" 2>&1
   set -e
 
   # Success is the ritual completing, not the menu press landing.

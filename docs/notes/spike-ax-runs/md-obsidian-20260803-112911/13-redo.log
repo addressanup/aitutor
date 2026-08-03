@@ -1,0 +1,24 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.480] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.480] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.480] AXValueChanged  role=AXTextArea title=
+  [   0.481] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.336] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.336] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.337] AXValueChanged  role=AXTextArea title=
+  [   1.337] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.338] AXTitleChanged  role=AXStaticText title=
+  [   2.194] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.195] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.195] AXValueChanged  role=AXTextArea title=
+  [   2.196] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.196] AXTitleChanged  role=AXStaticText title=
+
+— notification counts —
+  AXValueChanged                           6
+  AXSelectedTextChanged                    6
+  AXTitleChanged                           2
+
+  total: 14   rate: 0.70 events/sec

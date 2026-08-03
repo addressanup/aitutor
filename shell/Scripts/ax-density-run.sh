@@ -28,6 +28,7 @@ SECONDS_PER_ACTION=20
 BASELINE_SECONDS=30
 OUT_DIR=""
 REPEAT=1
+ENABLE_AX=""
 
 while [ $# -gt 0 ]; do
   case "$1" in
@@ -38,6 +39,10 @@ while [ $# -gt 0 ]; do
     --baseline-seconds) BASELINE_SECONDS="$2"; shift 2 ;;
     --out) OUT_DIR="$2"; shift 2 ;;
     --repeat) REPEAT="$2"; shift 2 ;;
+    # Browser-backed (Electron/CEF) targets do not build an AX tree until an assistive
+    # client asks. Without this they report near-silence, which is a false Silent verdict
+    # on every action rather than a measurement of the app.
+    --enable-ax) ENABLE_AX="--enable-ax"; shift ;;
     *) echo "unknown arg: $1" >&2; exit 2 ;;
   esac
 done
@@ -70,7 +75,7 @@ swift build --package-path "$REPO_ROOT/shell" --product axprobe >/dev/null
 [ -z "$DRIVERS_DIR" ] || swift build --package-path "$REPO_ROOT/shell" --product axdrive >/dev/null
 
 echo "== preflight: 2s probe (checks Accessibility grant + app running) =="
-if ! "$PROBE" --bundle-id "$BUNDLE_ID" --seconds 2 >/dev/null; then
+if ! "$PROBE" --bundle-id "$BUNDLE_ID" $ENABLE_AX --seconds 2 >/dev/null; then
   echo "preflight failed — see error above (grant Accessibility to this terminal; start the target app)" >&2
   exit 1
 fi
@@ -110,7 +115,7 @@ run_protocol() {
   echo ""
   echo "== baseline: ${BASELINE_SECONDS}s ambient notification noise (hands off) =="
   if [ -z "$DRIVERS_DIR" ]; then read -r -p "Press Enter to start the baseline… " _; fi
-  "$PROBE" --bundle-id "$BUNDLE_ID" --seconds "$BASELINE_SECONDS" 2>&1 | tee "$out/00-baseline.log"
+  "$PROBE" --bundle-id "$BUNDLE_ID" $ENABLE_AX --seconds "$BASELINE_SECONDS" 2>&1 | tee "$out/00-baseline.log"
 
   local i=0 action slug log driver probe_pid c
   for action in "${ACTIONS[@]}"; do
@@ -121,7 +126,7 @@ run_protocol() {
     echo "== action $i/$N: $action =="
     if [ -n "$DRIVERS_DIR" ]; then
       driver="${DRIVER_FILES[$((i - 1))]}"
-      "$PROBE" --bundle-id "$BUNDLE_ID" --seconds "$SECONDS_PER_ACTION" --verbose > "$log" 2>&1 &
+      "$PROBE" --bundle-id "$BUNDLE_ID" $ENABLE_AX --seconds "$SECONDS_PER_ACTION" --verbose > "$log" 2>&1 &
       probe_pid=$!
       sleep 1
       if ! "$DRIVE" --bundle-id "$BUNDLE_ID" --script "$driver" >> "$log" 2>&1; then
@@ -133,7 +138,7 @@ run_protocol() {
       echo "   Press Enter, switch to the app during the 3s countdown, then perform it 3x slowly."
       read -r -p "   Ready? " _
       for c in 3 2 1; do echo "   $c…"; sleep 1; done
-      "$PROBE" --bundle-id "$BUNDLE_ID" --seconds "$SECONDS_PER_ACTION" --verbose 2>&1 | tee "$log"
+      "$PROBE" --bundle-id "$BUNDLE_ID" $ENABLE_AX --seconds "$SECONDS_PER_ACTION" --verbose 2>&1 | tee "$log"
     fi
   done
 

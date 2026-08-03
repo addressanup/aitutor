@@ -1,0 +1,56 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.018] AXWindowCreated  role=- title=-
+  [   0.019] AXUIElementDestroyed  role=- title=-
+  [   0.019] AXSelectedTextChanged  role=AXTextField title=
+  [   0.034] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.034] AXValueChanged  role=AXTextField title=
+  [   0.034] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.035] AXUIElementDestroyed  role=- title=-
+  [   0.165] AXSelectedTextChanged  role=AXTextField title=
+  [   0.169] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.170] AXValueChanged  role=AXTextField title=
+  [   0.171] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.171] AXWindowCreated  role=- title=-
+  [   0.171] AXUIElementDestroyed  role=- title=-
+  [   0.171] AXUIElementDestroyed  role=- title=-
+  [   0.464] AXMenuItemSelected  role=AXMenuItem title=Select All
+  [   0.466] AXFocusedUIElementChanged  role=AXTextField title=
+  [   0.466] AXSelectedTextChanged  role=AXTextField title=
+  [   0.467] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.566] AXFocusedUIElementChanged  role=AXTextField title=
+  [   0.668] AXSelectedTextChanged  role=AXTextField title=
+  [   0.669] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.859] AXSelectedTextChanged  role=AXTextField title=
+  [   0.859] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.051] AXMenuItemSelected  role=AXMenuItem title=Bold
+  [   1.052] AXFocusedUIElementChanged  role=AXTextField title=
+  [   1.152] AXFocusedUIElementChanged  role=AXTextField title=
+  [   1.259] AXMenuItemSelected  role=AXMenuItem title=Bold
+  [   1.261] AXFocusedUIElementChanged  role=AXTextField title=
+  [   1.361] AXFocusedUIElementChanged  role=AXTextField title=
+  [   2.127] AXMenuItemSelected  role=AXMenuItem title=Bold
+  [   2.129] AXFocusedUIElementChanged  role=AXTextField title=
+  [   2.137] AXValueChanged  role=AXTextArea title=
+  [   2.138] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.229] AXFocusedUIElementChanged  role=AXTextField title=
+  [   2.321] AXMenuItemSelected  role=AXMenuItem title=Bold
+  [   2.323] AXFocusedUIElementChanged  role=AXTextField title=
+  [   2.423] AXFocusedUIElementChanged  role=AXTextField title=
+  [   3.179] AXMenuItemSelected  role=AXMenuItem title=Bold
+  [   3.384] AXMenuItemSelected  role=AXMenuItem title=Bold
+  [   7.964] AXApplicationActivated  role=AXApplication title=Obsidian
+  [   7.989] AXUIElementDestroyed  role=- title=-
+  [   7.989] AXUIElementDestroyed  role=- title=-
+
+— notification counts —
+  AXSelectedTextChanged                    10
+  AXFocusedUIElementChanged                10
+  AXMenuItemSelected                       7
+  AXUIElementDestroyed                     6
+  AXValueChanged                           6
+  AXWindowCreated                          2
+  AXApplicationActivated                   1
+
+  total: 42   rate: 2.10 events/sec

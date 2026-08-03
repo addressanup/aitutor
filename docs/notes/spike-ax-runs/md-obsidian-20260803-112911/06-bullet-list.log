@@ -1,0 +1,352 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.212] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.213] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.213] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   0.213] AXValueChanged  role=AXTextArea title=
+  [   0.213] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.219] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.219] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.219] AXValueChanged  role=AXTextArea title=
+  [   0.219] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.443] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.443] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.443] AXValueChanged  role=AXTextArea title=
+  [   0.444] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.657] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.657] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.657] AXValueChanged  role=AXTextArea title=
+  [   0.657] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.857] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.857] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.858] AXValueChanged  role=AXTextArea title=
+  [   0.858] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.055] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.056] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.056] AXValueChanged  role=AXTextArea title=
+  [   1.056] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.070] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.071] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.071] AXValueChanged  role=AXTextArea title=
+  [   1.071] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.086] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.087] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.087] AXValueChanged  role=AXTextArea title=
+  [   1.087] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.102] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.102] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.102] AXValueChanged  role=AXTextArea title=
+  [   1.103] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.103] AXTitleChanged  role=AXStaticText title=
+  [   1.119] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.119] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.119] AXValueChanged  role=AXTextArea title=
+  [   1.119] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.120] AXTitleChanged  role=AXStaticText title=
+  [   1.135] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.135] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.136] AXValueChanged  role=AXTextArea title=
+  [   1.136] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.136] AXTitleChanged  role=AXStaticText title=
+  [   1.152] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.153] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.153] AXValueChanged  role=AXTextArea title=
+  [   1.153] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.153] AXTitleChanged  role=AXStaticText title=
+  [   1.169] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.169] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.169] AXValueChanged  role=AXTextArea title=
+  [   1.170] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.170] AXTitleChanged  role=AXStaticText title=
+  [   1.186] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.186] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.186] AXValueChanged  role=AXTextArea title=
+  [   1.187] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.187] AXTitleChanged  role=AXStaticText title=
+  [   1.202] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.202] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.203] AXValueChanged  role=AXTextArea title=
+  [   1.203] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.203] AXTitleChanged  role=AXStaticText title=
+  [   1.219] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.219] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.220] AXValueChanged  role=AXTextArea title=
+  [   1.220] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.220] AXTitleChanged  role=AXStaticText title=
+  [   1.236] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.236] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.236] AXValueChanged  role=AXTextArea title=
+  [   1.236] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.236] AXTitleChanged  role=AXStaticText title=
+  [   1.252] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.252] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.252] AXValueChanged  role=AXTextArea title=
+  [   1.253] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.253] AXTitleChanged  role=AXStaticText title=
+  [   1.268] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.268] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.270] AXValueChanged  role=AXTextArea title=
+  [   1.271] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.271] AXTitleChanged  role=AXStaticText title=
+  [   1.284] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.285] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.285] AXValueChanged  role=AXTextArea title=
+  [   1.285] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.285] AXTitleChanged  role=AXStaticText title=
+  [   1.303] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.303] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.303] AXValueChanged  role=AXTextArea title=
+  [   1.303] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.303] AXTitleChanged  role=AXStaticText title=
+  [   1.319] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.320] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.320] AXValueChanged  role=AXTextArea title=
+  [   1.320] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.320] AXTitleChanged  role=AXStaticText title=
+  [   1.336] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.336] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.336] AXValueChanged  role=AXTextArea title=
+  [   1.336] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.336] AXTitleChanged  role=AXStaticText title=
+  [   1.504] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.504] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.504] AXValueChanged  role=AXTextArea title=
+  [   1.505] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.704] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.705] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.705] AXValueChanged  role=AXTextArea title=
+  [   1.705] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.562] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.563] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.564] AXValueChanged  role=AXTextArea title=
+  [   2.564] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.569] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.569] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.569] AXValueChanged  role=AXTextArea title=
+  [   2.570] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.586] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.587] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.587] AXValueChanged  role=AXTextArea title=
+  [   2.587] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.602] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.602] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.602] AXValueChanged  role=AXTextArea title=
+  [   2.602] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.603] AXTitleChanged  role=AXStaticText title=
+  [   2.618] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.619] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.619] AXValueChanged  role=AXTextArea title=
+  [   2.620] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.620] AXTitleChanged  role=AXStaticText title=
+  [   2.635] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.635] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.636] AXValueChanged  role=AXTextArea title=
+  [   2.636] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.636] AXTitleChanged  role=AXStaticText title=
+  [   2.652] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.652] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.653] AXValueChanged  role=AXTextArea title=
+  [   2.653] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.653] AXTitleChanged  role=AXStaticText title=
+  [   2.669] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.669] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.669] AXValueChanged  role=AXTextArea title=
+  [   2.670] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.670] AXTitleChanged  role=AXStaticText title=
+  [   2.685] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.686] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.686] AXValueChanged  role=AXTextArea title=
+  [   2.686] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.687] AXTitleChanged  role=AXStaticText title=
+  [   2.702] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.702] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.703] AXValueChanged  role=AXTextArea title=
+  [   2.703] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.703] AXTitleChanged  role=AXStaticText title=
+  [   2.719] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.719] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.719] AXValueChanged  role=AXTextArea title=
+  [   2.720] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.720] AXTitleChanged  role=AXStaticText title=
+  [   2.736] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.736] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.736] AXValueChanged  role=AXTextArea title=
+  [   2.736] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.737] AXTitleChanged  role=AXStaticText title=
+  [   2.752] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.752] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.753] AXValueChanged  role=AXTextArea title=
+  [   2.753] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.753] AXTitleChanged  role=AXStaticText title=
+  [   2.769] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.770] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.772] AXValueChanged  role=AXTextArea title=
+  [   2.772] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.772] AXTitleChanged  role=AXStaticText title=
+  [   2.786] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.786] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.786] AXValueChanged  role=AXTextArea title=
+  [   2.786] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.786] AXTitleChanged  role=AXStaticText title=
+  [   2.802] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.803] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.803] AXValueChanged  role=AXTextArea title=
+  [   2.803] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.804] AXTitleChanged  role=AXStaticText title=
+  [   2.819] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.819] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.819] AXValueChanged  role=AXTextArea title=
+  [   2.819] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.819] AXTitleChanged  role=AXStaticText title=
+  [   2.835] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.836] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.836] AXValueChanged  role=AXTextArea title=
+  [   2.836] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.836] AXTitleChanged  role=AXStaticText title=
+  [   2.852] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.852] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.852] AXValueChanged  role=AXTextArea title=
+  [   2.853] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.853] AXTitleChanged  role=AXStaticText title=
+  [   2.868] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.868] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.868] AXValueChanged  role=AXTextArea title=
+  [   2.869] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.869] AXTitleChanged  role=AXStaticText title=
+  [   2.885] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.885] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.885] AXValueChanged  role=AXTextArea title=
+  [   2.885] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.886] AXTitleChanged  role=AXStaticText title=
+  [   2.902] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.903] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.903] AXValueChanged  role=AXTextArea title=
+  [   2.903] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.903] AXTitleChanged  role=AXStaticText title=
+  [   2.919] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.919] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.919] AXValueChanged  role=AXTextArea title=
+  [   2.920] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.920] AXTitleChanged  role=AXStaticText title=
+  [   2.935] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.936] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.936] AXValueChanged  role=AXTextArea title=
+  [   2.936] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.936] AXTitleChanged  role=AXStaticText title=
+  [   3.085] AXSelectedTextChanged  role=AXTextArea title=
+  [   3.086] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.086] AXValueChanged  role=AXTextArea title=
+  [   3.086] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.304] AXSelectedTextChanged  role=AXTextArea title=
+  [   3.304] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.305] AXValueChanged  role=AXTextArea title=
+  [   3.305] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.152] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.152] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.153] AXValueChanged  role=AXTextArea title=
+  [   4.154] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.168] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.168] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.168] AXValueChanged  role=AXTextArea title=
+  [   4.169] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.187] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.188] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.188] AXValueChanged  role=AXTextArea title=
+  [   4.188] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.202] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.202] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.203] AXValueChanged  role=AXTextArea title=
+  [   4.203] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.203] AXTitleChanged  role=AXStaticText title=
+  [   4.218] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.219] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.219] AXValueChanged  role=AXTextArea title=
+  [   4.219] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.219] AXTitleChanged  role=AXStaticText title=
+  [   4.234] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.234] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.235] AXValueChanged  role=AXTextArea title=
+  [   4.235] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.235] AXTitleChanged  role=AXStaticText title=
+  [   4.251] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.251] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.252] AXValueChanged  role=AXTextArea title=
+  [   4.252] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.252] AXTitleChanged  role=AXStaticText title=
+  [   4.269] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.269] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.269] AXValueChanged  role=AXTextArea title=
+  [   4.269] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.269] AXTitleChanged  role=AXStaticText title=
+  [   4.285] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.286] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.286] AXValueChanged  role=AXTextArea title=
+  [   4.286] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.286] AXTitleChanged  role=AXStaticText title=
+  [   4.302] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.303] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.303] AXValueChanged  role=AXTextArea title=
+  [   4.303] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.303] AXTitleChanged  role=AXStaticText title=
+  [   4.319] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.319] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.319] AXValueChanged  role=AXTextArea title=
+  [   4.319] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.319] AXTitleChanged  role=AXStaticText title=
+  [   4.336] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.336] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.336] AXValueChanged  role=AXTextArea title=
+  [   4.336] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.337] AXTitleChanged  role=AXStaticText title=
+  [   4.352] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.352] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.353] AXValueChanged  role=AXTextArea title=
+  [   4.353] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.353] AXTitleChanged  role=AXStaticText title=
+  [   4.369] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.369] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.369] AXValueChanged  role=AXTextArea title=
+  [   4.370] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.370] AXTitleChanged  role=AXStaticText title=
+  [   4.385] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.386] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.386] AXValueChanged  role=AXTextArea title=
+  [   4.386] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.386] AXTitleChanged  role=AXStaticText title=
+  [   4.402] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.402] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.403] AXValueChanged  role=AXTextArea title=
+  [   4.403] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.403] AXTitleChanged  role=AXStaticText title=
+  [   4.419] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.419] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.419] AXValueChanged  role=AXTextArea title=
+  [   4.420] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.420] AXTitleChanged  role=AXStaticText title=
+  [   4.435] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.435] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.436] AXValueChanged  role=AXTextArea title=
+  [   4.436] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.436] AXTitleChanged  role=AXStaticText title=
+  [   4.452] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.452] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.453] AXValueChanged  role=AXTextArea title=
+  [   4.453] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.453] AXTitleChanged  role=AXStaticText title=
+  [   4.610] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.610] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.611] AXValueChanged  role=AXTextArea title=
+  [   4.611] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.820] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.821] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.821] AXValueChanged  role=AXTextArea title=
+  [   4.821] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+
+— notification counts —
+  AXValueChanged                           144
+  AXSelectedTextChanged                    144
+  AXTitleChanged                           52
+  AXFocusedUIElementChanged                1
+
+  total: 341   rate: 17.05 events/sec

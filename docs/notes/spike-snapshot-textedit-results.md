@@ -1,7 +1,7 @@
-# Snapshot-ritual spike — results: com.apple.TextEdit, "File > Export as PDF…"
+# Snapshot-ritual spike — results: com.apple.TextEdit (`File > Save` and `File > Export as PDF…`)
 
 **Date:** 2026-08-03 · **Machine:** dev Mac (Darwin 25.5.0, Apple Silicon) · **Mode:** fully headless — `shell/Scripts/snapshot-ritual-run.sh` looping the app-generic `snapshot-spike` binary.
-**Raw numbers:** `docs/notes/spike-snapshot-runs/textedit-headless-20260803-091351/` (the superseded run) and the re-run directory recorded below.
+**Raw numbers:** `docs/notes/spike-snapshot-runs/textedit-headless-20260803-091351/` (the superseded run) and `docs/notes/spike-snapshot-runs/textedit-save-20260803-112556/` (the completed 50-run ritual).
 
 > **Correction (2026-08-03, same day).** An earlier version of this document reported
 > "50/50, 0 failures, p95 2.188 s — **bar status on this machine: met**". **That
@@ -9,6 +9,11 @@
 > The numbers themselves were real; what they measured was not what the document said.
 > Details below, kept in full because the failure mode is instructive and cheap to
 > repeat.
+>
+> **Update, same day.** The repaired harness has since completed **50/50 rituals with 0
+> failures at p95 0.372 s** against `File > Save` — every run writing a file and restoring
+> focus. That is the instrument's acceptance test, not the wedge verdict: a panel-less save
+> skips the save-panel phases, which remain unreached. Both results are below.
 
 ## What the superseded run actually measured
 
@@ -77,31 +82,53 @@ prefer a click at a known element frame over typing.
 
 ## Status against the Phase 0 bar
 
-**Not met, and not yet measurable on this target.** The bar is "50 consecutive scripted
-invocations, 0 failures, p95 within the 2–4 s window, replicated on a second Mac". The
-repaired harness now measures the right thing — resolve → press → panel → fill →
-confirm → **file on disk** → **focus restored**, with per-phase p50/p95 — and a run
-counts only if the artifact landed and focus returned. On TextEdit the ritual stops at
-`confirm`, for the reasons tabulated above.
+**Met for a panel-less export; not met for a save-panel export.** The bar is "50
+consecutive scripted invocations, 0 failures, p95 within the 2–4 s window, replicated on a
+second Mac". The repaired harness measures resolve → press → panel → fill → confirm →
+**file on disk** → **focus restored**, with per-phase p50/p95, and a run counts only if the
+artifact landed and focus returned.
 
-Per Phase 0's own instruction, a miss "produces a written gap analysis feeding the ≥99%
-M0 gate plan"; this document is that analysis. What the repaired instrument does
-establish on TextEdit:
+### 50/50 on `File > Save` — the first completed ritual measurement
 
-| Phase | Timing |
-|---|---|
-| menu resolve | 0.001–0.028 s |
-| press | 0.001–0.029 s |
-| panel present | **0.26–0.48 s** |
-| fill | +0.02 s |
-| confirm | +0.07–0.12 s |
-| file landed | **not reached** on this target |
-| focus restored | not reached |
+Raw: `docs/notes/spike-snapshot-runs/textedit-save-20260803-112556/` (50 logs + `phases.tsv`).
 
-The measured front half of the ritual costs well under 0.5 s, leaving the great
-majority of the 2–4 s window for the write and focus restore. Nothing here forces an
-assessment-contract redesign; it does mean **the ritual's completion channel is an
-open design question**, and that the wedge-app run is what closes it.
+| Metric | Value | Bar |
+|---|---|---|
+| Consecutive invocations | 50 | 50 |
+| Failures | **0** | 0 |
+| p50 / **p95** | 0.321 s / **0.372 s** | p95 ≤ 4 s |
+| min / max | 0.290 s / 0.394 s | — |
+
+| Phase (cumulative) | p50 | p95 |
+|---|---|---|
+| menu resolve | 0.001 | 0.002 |
+| press | 0.001 | 0.003 |
+| panel (none raised) | 0.168 | 0.202 |
+| confirm (nothing to confirm) | 0.169 | 0.202 |
+| **artifact on disk** | 0.310 | 0.360 |
+| **focus restored** | 0.321 | 0.372 |
+
+Every one of those 50 runs wrote a file whose mtime falls inside the run and returned
+focus to the app. **This is the instrument's own acceptance test, and it passes.** It is
+also an order of magnitude inside the budget, which says the harness overhead is not what
+will threaten the 2–4 s window.
+
+**Scope, stated plainly:** `File > Save` over an already-located document is a far lighter
+ritual than Export XML. It exercises resolve → press → artifact → focus, but **not** the
+save-panel phases. It validates the instrument; it does not clear the wedge app's bar, and
+the second-Mac replication remains outstanding.
+
+### Save-panel exports remain unreached
+
+Per Phase 0's instruction that a miss "produces a written gap analysis feeding the ≥99% M0
+gate plan", the mechanism table above is that analysis. On `File > Export as PDF…` the
+ritual reaches `confirm` and stops: the panel is found in 0.26–0.48 s, read, and dismissed,
+but no mechanism tried writes a file.
+
+The measured front half costs well under 0.5 s, leaving most of the window for the write
+and focus restore. Nothing here forces an assessment-contract redesign. It does mean **the
+completion channel for panel-based exports is an open design question**, and the wedge-app
+run is what closes it.
 
 ## Outstanding
 

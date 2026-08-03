@@ -61,8 +61,11 @@ spike-ax: ## AXObserver density probe: make spike-ax TARGET=com.apple.TextEdit S
 spike-verdict-test: ## density-verdict classifier tests (no TCC, no target app — CI-safe)
 	node --test 'shell/Scripts/*.test.mjs'
 
+ENABLE_AX ?=
+REPEAT ?= 1
+
 spike-ax-run: ## per-action density: TARGET=<bundle-id> + ACTIONS=<file> (interactive) or DRIVERS=<dir> (headless)
-	shell/Scripts/ax-density-run.sh --bundle-id $(TARGET) $(if $(DRIVERS),--drivers $(DRIVERS),--actions $(ACTIONS)) --seconds $(ACTION_SECONDS)
+	shell/Scripts/ax-density-run.sh --bundle-id $(TARGET) $(if $(DRIVERS),--drivers $(DRIVERS),--actions $(ACTIONS)) --seconds $(ACTION_SECONDS) --repeat $(REPEAT) $(if $(ENABLE_AX),--enable-ax,)
 
 spike-snapshot-run: ## ritual reliability loop: make spike-snapshot-run TARGET=<bundle-id> MENU="File>…" [RUNS=50]
 	shell/Scripts/snapshot-ritual-run.sh --bundle-id $(TARGET) --menu "$(MENU)" --runs $(RUNS)

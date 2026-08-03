@@ -1,0 +1,12 @@
+Target com.apple.TextEdit (pid 46436) — menu path ["File", "Save"]
+  saving to: /tmp/snapshot-1785735695281
+  resolve   0.001s (title: Save)
+  press     0.002s
+  panel     0.169s — none (artifact already written)
+  fill      0.170s (expecting "aitutor-spike-textedit.rtf")
+  confirm   0.170s (no panel — nothing to confirm)
+  file      0.308s (464 bytes) /tmp/aitutor-spike-textedit.rtf
+  focus     0.319s
+  PHASES resolve=0.001 press=0.002 panel=0.169 fill=0.170 confirm=0.170 file=0.308 focus=0.319
+  RITUAL ok — total 0.319s
+  ✓ within the 2–4s ritual budget

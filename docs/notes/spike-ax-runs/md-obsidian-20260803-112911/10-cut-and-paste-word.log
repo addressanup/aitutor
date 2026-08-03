@@ -1,0 +1,79 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.493] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.493] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.495] AXValueChanged  role=AXTextArea title=
+  [   0.495] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.495] AXTitleChanged  role=AXStaticText title=
+  [   0.495] AXTitleChanged  role=AXStaticText title=
+  [   0.496] AXTitleChanged  role=AXStaticText title=
+  [   0.496] AXTitleChanged  role=AXStaticText title=
+  [   0.692] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.693] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.693] AXValueChanged  role=AXTextArea title=
+  [   0.693] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.693] AXTitleChanged  role=AXStaticText title=
+  [   0.694] AXTitleChanged  role=AXStaticText title=
+  [   0.694] AXTitleChanged  role=AXStaticText title=
+  [   0.694] AXTitleChanged  role=AXStaticText title=
+  [   0.694] AXTitleChanged  role=AXStaticText title=
+  [   0.694] AXTitleChanged  role=AXStaticText title=
+  [   0.694] AXTitleChanged  role=AXStaticText title=
+  [   0.889] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.889] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.083] AXMenuItemSelected  role=AXMenuItem title=Cut
+  [   1.086] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   1.100] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.100] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.100] AXValueChanged  role=AXTextArea title=
+  [   1.100] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.184] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   1.744] AXMenuItemSelected  role=AXMenuItem title=Paste
+  [   1.747] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   1.761] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.762] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.763] AXValueChanged  role=AXTextArea title=
+  [   1.763] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.846] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   2.628] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.628] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.807] AXMenuItemSelected  role=AXMenuItem title=Cut
+  [   2.809] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   2.826] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.826] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.826] AXValueChanged  role=AXTextArea title=
+  [   2.826] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.909] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   3.463] AXMenuItemSelected  role=AXMenuItem title=Paste
+  [   3.465] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   3.494] AXSelectedTextChanged  role=AXTextArea title=
+  [   3.494] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.495] AXValueChanged  role=AXTextArea title=
+  [   3.495] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.565] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   4.331] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.331] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.525] AXMenuItemSelected  role=AXMenuItem title=Cut
+  [   4.527] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   4.543] AXSelectedTextChanged  role=AXTextArea title=
+  [   4.544] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.544] AXValueChanged  role=AXTextArea title=
+  [   4.544] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   4.627] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   5.190] AXMenuItemSelected  role=AXMenuItem title=Paste
+  [   5.192] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   5.203] AXSelectedTextChanged  role=AXTextArea title=
+  [   5.204] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   5.204] AXValueChanged  role=AXTextArea title=
+  [   5.204] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   5.292] AXFocusedUIElementChanged  role=AXTextArea title=
+
+— notification counts —
+  AXSelectedTextChanged                    22
+  AXValueChanged                           16
+  AXFocusedUIElementChanged                12
+  AXTitleChanged                           11
+  AXMenuItemSelected                       6
+
+  total: 67   rate: 3.35 events/sec

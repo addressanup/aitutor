@@ -1,0 +1,35 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   0.518] AXMenuItemSelected  role=AXMenuItem title=Undo
+  [   0.520] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   0.523] AXSelectedTextChanged  role=AXTextArea title=
+  [   0.523] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.523] AXValueChanged  role=AXTextArea title=
+  [   0.524] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   0.524] AXTitleChanged  role=AXStaticText title=
+  [   0.619] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   1.371] AXMenuItemSelected  role=AXMenuItem title=Undo
+  [   1.374] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   1.383] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.383] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.383] AXValueChanged  role=AXTextArea title=
+  [   1.384] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.384] AXTitleChanged  role=AXStaticText title=
+  [   1.473] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   2.229] AXMenuItemSelected  role=AXMenuItem title=Undo
+  [   2.231] AXFocusedUIElementChanged  role=AXTextArea title=
+  [   2.238] AXSelectedTextChanged  role=AXTextArea title=
+  [   2.239] AXSelectedTextChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.239] AXValueChanged  role=AXTextArea title=
+  [   2.239] AXValueChanged  role=AXWebArea title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.331] AXFocusedUIElementChanged  role=AXTextArea title=
+
+— notification counts —
+  AXFocusedUIElementChanged                6
+  AXSelectedTextChanged                    6
+  AXValueChanged                           6
+  AXMenuItemSelected                       3
+  AXTitleChanged                           2
+
+  total: 23   rate: 1.15 events/sec

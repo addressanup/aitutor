@@ -1,0 +1,39 @@
+AXManualAccessibility set: yes
+Observing md.obsidian (pid 83959) for 20s — drive the app now…
+
+  [   1.269] AXSelectedTextChanged  role=AXTextArea title=
+  [   1.270] AXSelectedTextChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   1.270] AXValueChanged  role=AXTextArea title=
+  [   1.270] AXValueChanged  role=AXWebArea title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.823] AXValueChanged  role=AXStaticText title=-
+  [   2.826] AXTitleChanged  role=AXWindow title=New tab - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.829] AXValueChanged  role=AXStaticText title=-
+  [   2.832] AXTitleChanged  role=AXWindow title=No file - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.841] AXValueChanged  role=AXStaticText title=-
+  [   2.842] AXTitleChanged  role=AXWindow title=Untitled - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.871] AXValueChanged  role=AXStaticText title=-
+  [   2.872] AXTitleChanged  role=AXWindow title=Scratch - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.906] AXValueChanged  role=AXStaticText title=-
+  [   2.907] AXTitleChanged  role=AXWindow title=New tab - aitutor-spike-vault - Obsidian 1.13.4
+  [   2.976] AXValueChanged  role=AXStaticText title=-
+  [   2.977] AXTitleChanged  role=AXWindow title=Untitled 1 - aitutor-spike-vault - Obsidian 1.13.4
+  [   3.188] AXUIElementDestroyed  role=- title=-
+  [   3.191] AXUIElementDestroyed  role=- title=-
+  [   3.241] AXUIElementDestroyed  role=- title=-
+  [   3.243] AXUIElementDestroyed  role=- title=-
+  [   3.291] AXUIElementDestroyed  role=- title=-
+  [   3.340] AXUIElementDestroyed  role=- title=-
+  [   3.343] AXUIElementDestroyed  role=- title=-
+  [   3.390] AXUIElementDestroyed  role=- title=-
+  [   3.392] AXUIElementDestroyed  role=- title=-
+  [   3.441] AXUIElementDestroyed  role=- title=-
+  [   3.443] AXUIElementDestroyed  role=- title=-
+  [   3.444] AXUIElementDestroyed  role=- title=-
+
+— notification counts —
+  AXUIElementDestroyed                     12
+  AXValueChanged                           8
+  AXTitleChanged                           6
+  AXSelectedTextChanged                    2
+
+  total: 28   rate: 1.40 events/sec

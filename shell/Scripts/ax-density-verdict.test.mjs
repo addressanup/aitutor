@@ -7,10 +7,13 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import {
+  aggregate,
   ambientCeiling,
   classify,
   clusterReps,
+  median,
   parseLog,
+  renderAggregate,
   repsFromDriver,
   scoreRun,
   signature,
@@ -162,4 +165,122 @@ test("scoreRun separates strict distinctness from the bar as written", () => {
 test("repsFromDriver reads the header and defaults to 3", () => {
   assert.equal(repsFromDriver("# name: x\n# reps: 5\nactivate\n"), 5);
   assert.equal(repsFromDriver("# name: x\nactivate\n"), 3);
+});
+
+// ---- Aggregation across repeated runs ----
+//
+// These guard the correction to the original spike: one run decided the architecture
+// and a second run of the same protocol disagreed by seventeen points.
+
+/** A run in the shape scoreRun returns, built from an ordered {action: verdict} map. */
+function run(verdicts) {
+  const scored = Object.entries(verdicts).map(([name, verdict]) => ({ name, verdict }));
+  const strict = scored.filter((s) => s.verdict === "Usable").length;
+  const counted = scored.filter((s) => s.verdict === "Usable" || s.verdict === "Usable*").length;
+  return { scored, usable: counted, strict, counted, count: scored.length };
+}
+
+/** `n` actions of one verdict, then the rest Partial — a run of a given score. */
+function runOfScore(usableCount, total = 20, verdict = "Usable") {
+  const verdicts = {};
+  for (let i = 1; i <= total; i++) verdicts[`action ${i}`] = i <= usableCount ? verdict : "Partial";
+  return run(verdicts);
+}
+
+test("median handles odd and even run counts", () => {
+  assert.equal(median([17, 14, 20]), 17);
+  assert.equal(median([0, 17]), 8.5, "an even count averages the two middle values");
+  assert.equal(median([20, 14, 17, 19]), 18);
+  assert.equal(median([]), null);
+});
+
+test("an action Usable in every run is stable; one Usable in some runs is not", () => {
+  const agg = aggregate([
+    run({ bold: "Usable", "align center": "Usable" }),
+    run({ bold: "Usable", "align center": "Partial" }),
+    run({ bold: "Usable*", "align center": "Silent" }),
+  ]);
+  const [bold, align] = agg.actions;
+  assert.equal(bold.usableIn, 3);
+  assert.equal(bold.stable, true, "Usable* is still Usable under the bar as written");
+  assert.equal(bold.flapping, false);
+  assert.equal(align.usableIn, 1);
+  assert.equal(align.stable, false, "Usable in 1 of 3 runs is a coin flip, not a passing action");
+  assert.equal(align.flapping, true);
+  assert.deepEqual(agg.flapping.map((a) => a.name), ["align center"]);
+  assert.equal(agg.alwaysUsable, 1);
+  assert.equal(agg.everUsable, 2);
+});
+
+test("an action missing from a run is 'absent', not silently Usable", () => {
+  const agg = aggregate([run({ bold: "Usable", undo: "Usable" }), run({ bold: "Usable" })]);
+  const undo = agg.actions.find((a) => a.name === "undo");
+  assert.deepEqual(undo.verdicts, ["Usable", "absent"]);
+  assert.equal(undo.usableIn, 1);
+});
+
+test("runs that bracket the bar are UNDECIDED, not averaged into an answer", () => {
+  // The committed pair: one run whose logs cannot support the per-rep criterion, one
+  // that scores exactly at the bar. No action is Usable in both.
+  const agg = aggregate([runOfScore(0), runOfScore(17)]);
+  assert.equal(agg.verdict, "UNDECIDED");
+  assert.equal(agg.median, 8.5);
+  assert.equal(agg.min, 0);
+  assert.equal(agg.max, 17);
+  assert.equal(agg.spread, 17);
+  assert.equal(agg.alwaysUsable, 0);
+  assert.equal(agg.everUsable, 17);
+  assert.match(agg.reasons.join(" "), /depends on which run you believe/);
+  assert.equal(agg.flapping.length, 17, "every action that scored disagreed between runs");
+});
+
+test("a median sitting on the bar is UNDECIDED — one flapping action is worth a point", () => {
+  const agg = aggregate([runOfScore(17), runOfScore(17), runOfScore(17)]);
+  assert.equal(agg.alwaysUsable, 17, "the same actions passed every time");
+  assert.equal(agg.verdict, "UNDECIDED");
+  assert.match(agg.reasons.join(" "), /within 1 of the 17 bar/);
+  // 18 is still inside the band; 19 clears it.
+  assert.equal(aggregate([runOfScore(18), runOfScore(18)]).verdict, "UNDECIDED");
+  assert.equal(aggregate([runOfScore(19), runOfScore(19)]).verdict, "PASS");
+});
+
+test("a stable score clear of the band passes; one clear below fails", () => {
+  const pass = aggregate([runOfScore(20), runOfScore(19), runOfScore(20)]);
+  assert.equal(pass.verdict, "PASS");
+  assert.equal(pass.median, 20);
+  const fail = aggregate([runOfScore(9), runOfScore(11), runOfScore(10)]);
+  assert.equal(fail.verdict, "FAIL");
+  assert.equal(fail.median, 10);
+  assert.equal(fail.reasons.length, 0);
+});
+
+test("aggregation reports both tiers separately, as the single-run scorer does", () => {
+  const agg = aggregate([
+    run({ a: "Usable", b: "Usable*" }),
+    run({ a: "Usable", b: "Usable*" }),
+  ]);
+  assert.deepEqual(agg.scores, [2, 2]);
+  assert.deepEqual(agg.strictScores, [1, 1]);
+  assert.equal(agg.strictMedian, 1);
+});
+
+test("the rendered report names the flapping actions rather than burying them", () => {
+  const text = renderAggregate(aggregate([runOfScore(0), runOfScore(17)], { labels: ["run-a", "run-b"] }));
+  assert.match(text, /VERDICT: UNDECIDED/);
+  assert.match(text, /17\/20 actions changed verdict between runs/);
+  assert.match(text, /action 1 — Usable in 1\/2/);
+  assert.match(text, /median \*\*8\.5\/20\*\*/);
+  assert.match(text, /run-a \| run-b/);
+});
+
+test("a non-canonical action count is called out, not silently rescaled", () => {
+  const text = renderAggregate(aggregate([run({ a: "Usable" }), run({ a: "Usable" })]));
+  assert.match(text, /bar is stated as >=17\/20 canonical actions; this set has 1/);
+});
+
+test("aggregating a single run still applies the bar to that run", () => {
+  const agg = aggregate([runOfScore(20)]);
+  assert.equal(agg.verdict, "PASS");
+  assert.equal(agg.alwaysUsable, 20);
+  assert.equal(agg.flapping.length, 0);
 });

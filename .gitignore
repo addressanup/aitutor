@@ -23,3 +23,7 @@ shell/build/
 
 # macOS
 .DS_Store
+
+# Agent worktrees — 740MB of nested checkouts, each with its own biome.json,
+# which biome reads as a competing root config and refuses to lint past.
+.claude/worktrees/

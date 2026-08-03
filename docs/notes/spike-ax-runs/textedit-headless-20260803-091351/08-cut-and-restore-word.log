@@ -1,0 +1,43 @@
+Observing com.apple.TextEdit (pid 27005) for 20s — drive the app now…
+
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Cut
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Paste
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Cut
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Paste
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Cut
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Paste
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+
+— notification counts —
+  AXFocusedUIElementChanged                12
+  AXSelectedTextChanged                    9
+  AXValueChanged                           6
+  AXMenuItemSelected                       6
+
+  total: 33   rate: 1.65 events/sec

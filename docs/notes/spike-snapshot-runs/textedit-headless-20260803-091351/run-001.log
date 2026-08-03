@@ -1,0 +1,6 @@
+Target com.apple.TextEdit (pid 27005) — menu path ["File", "Export as PDF…"]
+  resolved menu item in 0.016s (title: Export as PDF…)
+  pressed in 0.016s — success: yes
+  save sheet appeared: no (total 2.649s)
+  intended save dir: /tmp/aitutor-spike-out
+  ✓ within the 2–4s ritual budget

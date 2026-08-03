@@ -1,0 +1,26 @@
+Observing com.apple.TextEdit (pid 27005) for 20s — drive the app now…
+
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Paste
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Paste
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Paste
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+
+— notification counts —
+  AXFocusedUIElementChanged                6
+  AXSelectedTextChanged                    4
+  AXMenuItemSelected                       3
+  AXValueChanged                           3
+
+  total: 16   rate: 0.80 events/sec

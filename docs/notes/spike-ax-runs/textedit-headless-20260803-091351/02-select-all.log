@@ -1,0 +1,34 @@
+Observing com.apple.TextEdit (pid 27005) for 20s — drive the app now…
+
+  AXMenuItemSelected  role=AXMenuItem title=Select All
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXWindowCreated  role=AXWindow title=
+  AXWindowMoved  role=AXWindow title=
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXUIElementDestroyed  role=- title=-
+  AXMenuItemSelected  role=AXMenuItem title=Select All
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXWindowCreated  role=AXWindow title=
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXUIElementDestroyed  role=- title=-
+  AXMenuItemSelected  role=AXMenuItem title=Select All
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXWindowCreated  role=AXWindow title=
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXUIElementDestroyed  role=- title=-
+
+— notification counts —
+  AXFocusedUIElementChanged                6
+  AXSelectedTextChanged                    6
+  AXMenuItemSelected                       3
+  AXUIElementDestroyed                     3
+  AXWindowCreated                          3
+  AXWindowMoved                            1
+
+  total: 22   rate: 1.10 events/sec

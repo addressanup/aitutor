@@ -1,0 +1,63 @@
+Observing com.apple.TextEdit (pid 27005) for 20s — drive the app now…
+
+  AXApplicationActivated  role=AXApplication title=TextEdit
+  AXMenuItemSelected  role=AXMenuItem title=Find…
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXUIElementDestroyed  role=- title=-
+  AXFocusedUIElementChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXUIElementDestroyed  role=- title=-
+  AXFocusedUIElementChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXValueChanged  role=AXImage title=-
+  AXFocusedUIElementChanged  role=AXWindow title=aitutor-spike-textedit.rtf
+  AXFocusedUIElementChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXWindow title=aitutor-spike-textedit.rtf
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXUIElementDestroyed  role=- title=-
+  AXUIElementDestroyed  role=- title=-
+  AXMenuItemSelected  role=AXMenuItem title=Find…
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXFocusedUIElementChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXValueChanged  role=AXTextField title=-
+  AXFocusedUIElementChanged  role=AXWindow title=aitutor-spike-textedit.rtf
+  AXFocusedUIElementChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextField title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXWindow title=aitutor-spike-textedit.rtf
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXUIElementDestroyed  role=- title=-
+
+— notification counts —
+  AXValueChanged                           16
+  AXFocusedUIElementChanged                14
+  AXSelectedTextChanged                    13
+  AXUIElementDestroyed                     5
+  AXMenuItemSelected                       2
+  AXApplicationActivated                   1
+
+  total: 51   rate: 2.55 events/sec

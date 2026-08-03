@@ -1,0 +1,20 @@
+Observing com.apple.TextEdit (pid 27005) for 20s — drive the app now…
+
+  AXMenuItemSelected  role=AXMenuItem title=Show Ruler
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Show Ruler
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Show Ruler
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Show Ruler
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+
+— notification counts —
+  AXFocusedUIElementChanged                8
+  AXMenuItemSelected                       4
+
+  total: 12   rate: 0.60 events/sec

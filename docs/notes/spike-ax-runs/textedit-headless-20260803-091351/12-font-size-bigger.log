@@ -1,0 +1,89 @@
+Observing com.apple.TextEdit (pid 27005) for 20s — drive the app now…
+
+  AXMenuItemSelected  role=AXMenuItem title=Select All
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXWindowCreated  role=AXWindow title=
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Bigger
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXMenuButton title=-
+  AXValueChanged  role=AXMenuButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXWindowMoved  role=AXWindow title=
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Bigger
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXMenuButton title=-
+  AXValueChanged  role=AXMenuButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXWindowMoved  role=AXWindow title=
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXMenuItemSelected  role=AXMenuItem title=Bigger
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXTextArea title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXComboBox title=-
+  AXValueChanged  role=AXMenuButton title=-
+  AXValueChanged  role=AXMenuButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXValueChanged  role=AXPopUpButton title=-
+  AXWindowMoved  role=AXWindow title=
+  AXFocusedUIElementChanged  role=AXTextArea title=-
+  AXSelectedTextChanged  role=AXTextArea title=-
+  AXUIElementDestroyed  role=- title=-
+
+— notification counts —
+  AXValueChanged                           57
+  AXFocusedUIElementChanged                8
+  AXMenuItemSelected                       4
+  AXWindowMoved                            3
+  AXSelectedTextChanged                    2
+  AXWindowCreated                          1
+  AXUIElementDestroyed                     1
+
+  total: 76   rate: 3.80 events/sec
